@@ -56,7 +56,13 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\HealthAndManaSystem.cs" />
     <Compile Include="Assets\Scripts\MenuContoller.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Raycasting.cs" />
+    <Compile Include="Assets\Scripts\Dialogue System\DialogueSystem.cs" />
+    <Compile Include="Assets\Scripts\Dialogue System\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\Dialogue System\DialogueTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

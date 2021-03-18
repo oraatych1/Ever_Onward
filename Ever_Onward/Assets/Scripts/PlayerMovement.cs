@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
     private float timeLeftGrounded = 0;
     public float jumpHeight = 8;
 
-    private bool isCrouched = false;
-    private Vector3 crounchScale;
+   // private bool isCrouched = false;
+   // private Vector3 crounchScale;
 
     Vector2 currentDir = Vector2.zero;
     Vector2 currentDirVelocity = Vector2.zero;
@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
 
-        crounchScale = new Vector3(1, 1.25f, 1);
+        //crounchScale = new Vector3(.5f,.5f, .5f);
 
         //locks cursor to the middle of the screen and remove the icon
         if (lockCursor)
@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
         currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetmouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
 
         cameraPitch -= currentMouseDelta.y * mouseSensitivity;
-        cameraPitch = Mathf.Clamp(cameraPitch, -90.0f, 90.0f);
+        cameraPitch = Mathf.Clamp(cameraPitch, -45.0f, 45.0f);
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
 
         transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
@@ -92,19 +92,19 @@ public class PlayerMovement : MonoBehaviour
         bool isJumpHeld = Input.GetButton("Jump");
         bool onJumpPress = Input.GetButtonDown("Jump");
 
-       if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
+       //if (Input.GetKeyDown(KeyCode.LeftControl))
+        //{
             
-            isCrouched = true;
-            cc.transform.localScale += -crounchScale;
-
-        }
-       if (Input.GetKeyUp(KeyCode.LeftControl))
-        {
+         //   isCrouched = true;
+         //   cc.transform.localScale += -crounchScale;
+       
+        //}
+       //if (Input.GetKeyUp(KeyCode.LeftControl))
+        //{
            
-            isCrouched = false;
-            cc.transform.localScale += crounchScale;
-        }
+        //   isCrouched = false;
+        //    cc.transform.localScale += crounchScale;
+       // }
         
 
         Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));

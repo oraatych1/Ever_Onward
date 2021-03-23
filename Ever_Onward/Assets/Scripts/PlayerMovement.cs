@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     Vector2 currentMouseDelta = Vector2.zero;
     Vector2 currentMouseDeltaVelocity = Vector2.zero;
 
+
+
     public bool isGrounded
     {
         get
@@ -39,7 +41,10 @@ public class PlayerMovement : MonoBehaviour
             return controller.isGrounded || timeLeftGrounded > 0;
         }
     }
-    // Start is called before the first frame update
+
+
+
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -55,7 +60,6 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
 

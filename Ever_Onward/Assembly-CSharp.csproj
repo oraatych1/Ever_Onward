@@ -61,10 +61,11 @@
     <Compile Include="Assets\Scripts\Dialogue System\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Raycasting.cs" />
     <Compile Include="Assets\Scripts\Dialogue System\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\InteractiveItem.cs" />
     <Compile Include="Assets\Scripts\Spells\Projectile.cs" />
     <Compile Include="Assets\Scripts\MenuContoller.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\InteractiveItem.cs" />
+    <Compile Include="Assets\Scripts\PlayerSpellSwitches.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

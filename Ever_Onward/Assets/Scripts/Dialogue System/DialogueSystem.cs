@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DialogueSystem : MonoBehaviour
 {
 
+
     public Text nameText;
     public Text dialogueText;
 
@@ -17,7 +18,7 @@ public class DialogueSystem : MonoBehaviour
 
     public bool inConversation = false;
 
-  
+
 
     void Start()
     {
@@ -27,7 +28,7 @@ public class DialogueSystem : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         inConversation = true;
-        
+
         if (pc.lockCursor)
         {
             Cursor.lockState = CursorLockMode.None;
@@ -44,7 +45,7 @@ public class DialogueSystem : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
-           
+
         DisplayNextSentence();
     }
 
@@ -61,10 +62,10 @@ public class DialogueSystem : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));
     }
 
-    IEnumerator TypeSentence (string sentence)
+    IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray())
+        foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(.05f);
@@ -83,5 +84,3 @@ public class DialogueSystem : MonoBehaviour
         inConversation = false;
     }
 }
-
-   

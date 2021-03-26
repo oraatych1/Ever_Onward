@@ -1290,6 +1290,7 @@ GameObject:
   - component: {fileID: 333348859}
   - component: {fileID: 333348858}
   - component: {fileID: 333348857}
+  - component: {fileID: 333348862}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1385,6 +1386,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &333348862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333348856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 645c175064bf27d4897003de88c57830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: MY NAME IS STEVE
+    sentences:
+    - HELLO
 --- !u!1 &338484216
 GameObject:
   m_ObjectHideFlags: 0
@@ -7246,10 +7263,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -7282,7 +7299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -179.7, y: 47.92279}
+  m_AnchoredPosition: {x: -179.7, y: 41.1}
   m_SizeDelta: {x: 160, y: 23.1544}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1639115983

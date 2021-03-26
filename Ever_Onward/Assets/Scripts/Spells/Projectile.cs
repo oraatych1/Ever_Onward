@@ -4,21 +4,31 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+
+    private Vector3 velocity;
+
+    private float lifeSpan = 3;
+    private float age = 0;
+
+    private void Start()
     {
+        
+    }
 
-       PlayerMovement player = other.GetComponent<PlayerMovement>();
+    public void InitBullet(Vector3 vel)
+    {
+        velocity = vel;
+    }
 
-        if (player)
+    private void Update()
+    {
+        age += Time.deltaTime;
+
+        if(age > lifeSpan)
         {
-          HealthAndManaSystem playerHealth =  player.GetComponent<HealthAndManaSystem>();
-            if (playerHealth)
-            {
-                playerHealth.TakeDamage(10);
-                
-            }
             Destroy(gameObject);
         }
 
+        transform.position += velocity * Time.deltaTime;
     }
 }

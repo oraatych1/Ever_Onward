@@ -40,8 +40,8 @@ public class Raycasting : MonoBehaviour
     void Update()
     {
         //did the user click on this game tick?
-        if (cam != null && Input.GetButtonDown("Fire1")) wantsToTarget = true;
-        if (cam != null && Input.GetButtonUp("Fire1")) wantsToTarget = false;
+        if (cam != null && Input.GetButtonDown("Action")) wantsToTarget = true;
+        if (cam != null && Input.GetButtonUp("Action")) wantsToTarget = false;
 
         if (!wantsToTarget) target = null;
 
@@ -90,6 +90,7 @@ public class Raycasting : MonoBehaviour
 
     private void RayFire()
     {
+        //print("RAY");
         if (!wantsToTarget) return;
         if (target == null) return;
         if (!CanSeeThing(target)) return;
@@ -98,7 +99,7 @@ public class Raycasting : MonoBehaviour
             Ray ray = new Ray(cam.transform.position, cam.transform.forward);
             RaycastHit hit;
 
-            Debug.DrawRay(ray.origin, ray.direction, Color.black, .5f);
+            Debug.DrawRay(ray.origin, ray.direction, Color.black, 100f);
             if (Physics.Raycast(ray, out hit))
             {
                 //raycast hit controller in scene

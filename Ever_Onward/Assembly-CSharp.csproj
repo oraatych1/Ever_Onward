@@ -655,6 +655,16 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Dialogue System\DialogueSystem.cs" />
+    <Compile Include="Assets\Scripts\HealthAndManaSystem.cs" />
+    <Compile Include="Assets\Scripts\Dialogue System\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\Raycasting.cs" />
+    <Compile Include="Assets\Scripts\Dialogue System\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\InteractiveItem.cs" />
+    <Compile Include="Assets\Scripts\Spells\Projectile.cs" />
+    <Compile Include="Assets\Scripts\MenuContoller.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerSpellSwitches.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

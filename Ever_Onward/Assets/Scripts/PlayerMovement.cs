@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public CharacterController cc;
     public float mouseSensitivity = 3.5f;
-    public float walkSpeed = 3.0f;
+    public float walkSpeed = 15.0f;
     public float gravity = -13.0f;
     [SerializeField]  [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;

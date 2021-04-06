@@ -49,9 +49,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Dialogue System\DialogueSystem.cs" />
      <Compile Include="Assets\Scripts\HealthAndManaSystem.cs" />
+     <Compile Include="Assets\Scripts\Spells\ComboScript.cs" />
      <Compile Include="Assets\Scripts\Dialogue System\Dialogue.cs" />
      <Compile Include="Assets\Scripts\PlayerSpellSwitches.cs" />
-     <Compile Include="Assets\Scripts\Spells\ComboScript.cs" />
      <Compile Include="Assets\Scripts\Raycasting.cs" />
      <Compile Include="Assets\Scripts\Dialogue System\DialogueTrigger.cs" />
      <Compile Include="Assets\Scripts\InteractiveItem.cs" />

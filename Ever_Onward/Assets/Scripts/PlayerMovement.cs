@@ -93,8 +93,14 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-        if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0) springAnimator.SetBool("isMoving", false);
-        else springAnimator.SetBool("isMoving", true);
+        if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0)
+        {
+            springAnimator.SetBool("isMoving", false);
+        }
+        else
+        {
+            springAnimator.SetBool("isMoving", true);
+        }
         bool isJumpHeld = Input.GetButton("Jump");
         bool onJumpPress = Input.GetButtonDown("Jump");
 

@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerSpellSwitches : MonoBehaviour
 {
     public Projectile prefabProjectile;
-   
+    public Image activeSpell;
+    public Sprite windImg;
+    public Sprite lightImg;
+    public Sprite natureImg;
     public enum SpellState
     {
         Wind,
@@ -34,7 +38,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                 windPresssed = true;
                 lightPressed = false;
                 grassPressed = false;
-
+                activeSpell.sprite = windImg;
                 if (Input.GetButton("Shortcut2")) currentSpellState = SpellState.Grass;
                 if (Input.GetButton("Shortcut3")) currentSpellState = SpellState.Light;
                 break;
@@ -43,7 +47,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                 windPresssed = false;
                 lightPressed = true;
                 grassPressed = false;
-
+                activeSpell.sprite = natureImg;
                 if (Input.GetButton("Shortcut1")) currentSpellState = SpellState.Wind;
                 if (Input.GetButton("Shortcut3")) currentSpellState = SpellState.Light;
                 break;
@@ -52,7 +56,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                 windPresssed = false;
                 lightPressed = false;
                 grassPressed = true;
-
+                activeSpell.sprite = lightImg;
                 if (Input.GetButton("Shortcut1")) currentSpellState = SpellState.Wind;
                 if (Input.GetButton("Shortcut2")) currentSpellState = SpellState.Grass;
                 break;

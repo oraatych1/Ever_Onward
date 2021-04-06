@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform playerCamera = null;
     public Rigidbody rb;
     public CharacterController cc;
+    public Animator springAnimator;
     public float mouseSensitivity = 3.5f;
     public float walkSpeed = 15.0f;
     public float gravity = -13.0f;
@@ -92,7 +93,8 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-
+        if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0) springAnimator.SetBool("isMoving", false);
+        else springAnimator.SetBool("isMoving", true);
         bool isJumpHeld = Input.GetButton("Jump");
         bool onJumpPress = Input.GetButtonDown("Jump");
 

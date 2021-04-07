@@ -32,72 +32,82 @@ public class HealthAndManaSystem : MonoBehaviour
     public void Update()
     {
         print(mana);
-        //if (Input.GetKeyDown(KeyCode.F)) health--;
+        if (Input.GetKeyDown(KeyCode.F)) health--;
         switch (health)
         {
+            case 0:
+                heart1.sprite = heartEmpty;
+                heart2.sprite = heartEmpty;
+                heart3.sprite = heartEmpty;
+                break;
             case 1:
                 heart1.sprite = heartHalf;
                 heart2.sprite = heartEmpty;
                 heart3.sprite = heartEmpty;
-                return;
+                break;
             case 2:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartEmpty;
                 heart3.sprite = heartEmpty;
-                return;
+                break;
             case 3:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartHalf;
                 heart3.sprite = heartEmpty;
-                return;
+                break;
             case 4:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartFull;
                 heart3.sprite = heartEmpty;
-                return;
+                break;
             case 5:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartFull;
                 heart3.sprite = heartHalf;
-                return;
+                break;
             case 6:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartFull;
                 heart3.sprite = heartFull;
-                return;
+                break;
         }
         switch (mana)
         {
+            case 0:
+                mana1.sprite = manaEmpty;
+                mana2.sprite = manaEmpty;
+                mana3.sprite = manaEmpty;
+                break;
             case 1:
                 mana1.sprite = manaHalf;
                 mana2.sprite = manaEmpty;
                 mana3.sprite = manaEmpty;
-                return;
+                break;
             case 2:
                 mana1.sprite = manaFull;
                 mana2.sprite = manaEmpty;
                 mana3.sprite = manaEmpty;
-                return;
+                break;
             case 3:
                 mana1.sprite = manaFull;
                 mana2.sprite = manaHalf;
                 mana3.sprite = manaEmpty;
-                return;
+                break;
             case 4:
                 mana1.sprite = manaFull;
                 mana2.sprite = manaFull;
                 mana3.sprite = manaEmpty;
-                return;
+                break;
             case 5:
                 mana1.sprite = manaFull;
                 mana2.sprite = manaFull;
                 mana3.sprite = manaHalf;
-                return;
+                break;
             case 6:
                 mana1.sprite = manaFull;
                 mana2.sprite = manaFull;
                 mana3.sprite = manaFull;
-                return;
+                break;
         }
     }
     public void UseMana(int amt)

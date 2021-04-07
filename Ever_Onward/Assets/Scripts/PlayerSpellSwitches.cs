@@ -73,7 +73,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                 if (spell.windPresssed)
                 {
                     print("PEW PEW");
-                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana >= 0)
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0)
                     {
                         spell.SpawnWindProjectile();
                         HealthAndManaSystem.mana--;
@@ -113,7 +113,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                 if (spell.lightPressed)
                 {
                     print("LIGHT CLASS");
-                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana >= 0)
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0)
                     {
                         spell.SpawnLightAOE();
                         HealthAndManaSystem.mana --;

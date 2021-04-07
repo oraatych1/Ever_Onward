@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerSpellSwitches : MonoBehaviour
 {
     public Projectile WindProjectile;
-    
+    public AOE LightAOE;
+    private CharacterController player;
+
+
    
     public enum SpellState
     {
@@ -30,10 +33,11 @@ public class PlayerSpellSwitches : MonoBehaviour
     private float grassCooldown = 0f;
     private float lightCooldown = 0f;
 
+/*
     private float WhirlwindCooldown = 0f;
     private float SeedSiphonCooldown = 0f;
     private float BrambleBlastCooldown = 0f;
-
+*/
 
     SpellState currentSpellState = SpellState.Wind;
 
@@ -60,25 +64,89 @@ public class PlayerSpellSwitches : MonoBehaviour
         {
             public override State Update()
             {
-               //behavoir
-               if (spell.windPresssed)
+                //behavoir
+                if (spell.windPresssed)
                 {
                     print("PEW PEW");
                     if (Input.GetButtonDown("Fire1")) spell.SpawnWindProjectile();
                 }
 
                 //if (!spell.windPresssed) return new States.Wind();
+                if (spell.grassPressed) return new States.Grass();
+                if (spell.lightPressed) return new States.Light();
+                //if (spell.whirlwindCombo) return new States.Whirlwind();
                 return null;
                 //transitions
             }
         }
+        public class Grass : State
+        {
+            public override State Update()
+            {
+                //behavoir
+                if (spell.grassPressed)
+                {
+                    print("GRASS SPELL");
+                    // if (Input.GetButtonDown("Fire1")) spell.SpawnWindProjectile();
+                }
+
+                if (spell.windPresssed) return new States.Wind();
+                if (spell.lightPressed) return new States.Light();
+                return null;
+                //transitions
+            }
+        }
+        public class Light : State
+        {
+            public override State Update()
+            {
+                //behavoir
+                if (spell.lightPressed)
+                {
+                    print("LIGHT CLASS");
+                     if (Input.GetButtonDown("Fire1")) spell.SpawnLightAOE();
+                }
+
+                if (spell.windPresssed) return new States.Wind();
+                if (spell.grassPressed) return new States.Grass();
+                return null;
+                //transitions
+            }
+        }
+        /*
+        public class Whirlwind : State
+        {
+            public float WhirlwindCooldown = 0f;
+            public override void OnStart(PlayerSpellSwitches spell)
+            {
+                WhirlwindCooldown = 5;
+            }
+            public override State Update()
+            {
+                WhirlwindCooldown--;
+                //behavoir
+                if (spell.whirlwindCombo)
+                {
+                    print("Whirlwind CLASS combo");
+                    
+                }
+
+                if (WhirlwindCooldown <= 0) return new States.Wind();
+                if (spell.windPresssed) return new States.Wind();
+                if (spell.grassPressed) return new States.Grass();
+                if (spell.lightPressed) return new States.Light();
+                return null;
+                //transitions
+            }
+        }
+        */
     }
 
     private States.State state;
 
     void Start()
     {
-        
+        player = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -88,7 +156,7 @@ public class PlayerSpellSwitches : MonoBehaviour
         if (state != null) SwitchState(state.Update());
 
         // print(currentSpellState);
-        print(windPresssed);
+        print(whirlwindCombo);
         switch (currentSpellState)
         {
             case SpellState.Wind:
@@ -156,7 +224,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                 lightPressed = false;
                 grassPressed = false;
 
-                if (WhirlwindCooldown <= 0) currentSpellState = SpellState.Wind;
+               // if (WhirlwindCooldown <= 0) currentSpellState = SpellState.Wind;
 
                 break;
 
@@ -169,7 +237,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                 lightPressed = false;
                 grassPressed = false;
 
-                if (SeedSiphonCooldown <= 0) currentSpellState = SpellState.Light;
+               // if (SeedSiphonCooldown <= 0) currentSpellState = SpellState.Light;
 
                 break;
 
@@ -182,7 +250,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                 lightPressed = false;
                 grassPressed = false;
 
-                if (BrambleBlastCooldown <= 0) currentSpellState = SpellState.Grass;
+              // if (BrambleBlastCooldown <= 0) currentSpellState = SpellState.Grass;
 
                 break;
         }
@@ -206,5 +274,13 @@ public class PlayerSpellSwitches : MonoBehaviour
         Projectile p = Instantiate(WindProjectile, transform.position, Quaternion.identity);
         p.InitBullet(transform.forward * 20);
 
+    }
+     
+    void SpawnLightAOE()
+    {
+        if (lightCooldown > 0) return;
+
+        AOE a = Instantiate(LightAOE, transform.position, Quaternion.identity);
+        
     }
 }

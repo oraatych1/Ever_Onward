@@ -4814,6 +4814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 512698288230551621}
   - component: {fileID: 512698288230551622}
+  - component: {fileID: 9197786561545400143}
   m_Layer: 0
   m_Name: Light AOE
   m_TagString: Untagged
@@ -4850,3 +4851,15 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9197786561545400143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512698288230551623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f9ffa87f75853488b9821f51be0e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

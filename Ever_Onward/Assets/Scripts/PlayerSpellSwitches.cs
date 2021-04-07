@@ -12,6 +12,7 @@ public class PlayerSpellSwitches : MonoBehaviour
     public Projectile WindProjectile;
     public AOE LightAOE;
     private CharacterController player;
+    //public DialogueSystem dialogue;
    
     public enum SpellState
     {
@@ -65,13 +66,18 @@ public class PlayerSpellSwitches : MonoBehaviour
         }
         public class Wind : State
         {
+            
             public override State Update()
             {
                 //behavoir
                 if (spell.windPresssed)
                 {
                     print("PEW PEW");
-                    if (Input.GetButtonDown("Fire1")) spell.SpawnWindProjectile();
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana >= 0)
+                    {
+                        spell.SpawnWindProjectile();
+                        HealthAndManaSystem.mana--;
+                    }
                 }
 
                 //if (!spell.windPresssed) return new States.Wind();
@@ -107,7 +113,11 @@ public class PlayerSpellSwitches : MonoBehaviour
                 if (spell.lightPressed)
                 {
                     print("LIGHT CLASS");
-                     if (Input.GetButtonDown("Fire1")) spell.SpawnLightAOE();
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana >= 0)
+                    {
+                        spell.SpawnLightAOE();
+                        HealthAndManaSystem.mana --;
+                    }
                 }
 
                 if (spell.windPresssed) return new States.Wind();
@@ -159,7 +169,7 @@ public class PlayerSpellSwitches : MonoBehaviour
         if (state != null) SwitchState(state.Update());
 
         // print(currentSpellState);
-        print(whirlwindCombo);
+        //print(whirlwindCombo);
         switch (currentSpellState)
         {
             case SpellState.Wind:
@@ -183,8 +193,8 @@ public class PlayerSpellSwitches : MonoBehaviour
 
             case SpellState.Grass:
                 windPresssed = false;
-                lightPressed = true;
-                grassPressed = false;
+                lightPressed = false;
+                grassPressed = true;
                 activeSpell.sprite = natureImg;
 
                 whirlwindCombo = false;
@@ -204,8 +214,8 @@ public class PlayerSpellSwitches : MonoBehaviour
 
             case SpellState.Light:
                 windPresssed = false;
-                lightPressed = false;
-                grassPressed = true;
+                lightPressed = true;
+                grassPressed = false;
 
                 whirlwindCombo = false;
                 seedSiphonCombo = false;

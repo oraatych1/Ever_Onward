@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HealthAndManaSystem : MonoBehaviour
 {
     
-    public int health { get; private set; }
+    public static int health { get; set; }
     public int healthMax = 6;
     public Image heart1;
     public Image heart2;
@@ -15,7 +15,7 @@ public class HealthAndManaSystem : MonoBehaviour
     public Sprite heartHalf;
     public Sprite heartEmpty;
 
-    public int mana { get; private set; }
+    public static int mana { get; set; }
     public int manaMax = 6;
     public Image mana1;
     public Image mana2;
@@ -31,7 +31,8 @@ public class HealthAndManaSystem : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)) health--;
+        print(mana);
+        //if (Input.GetKeyDown(KeyCode.F)) health--;
         switch (health)
         {
             case 1:

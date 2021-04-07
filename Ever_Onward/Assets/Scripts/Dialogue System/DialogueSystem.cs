@@ -16,13 +16,18 @@ public class DialogueSystem : MonoBehaviour
 
     public PlayerMovement pc;
 
-    public bool inConversation = false;
+    public static bool inConversation = false;
 
 
 
     void Start()
     {
         sentences = new Queue<string>();
+    }
+
+    private void Update()
+    {
+        print(inConversation);
     }
 
     public void StartDialogue(Dialogue dialogue)

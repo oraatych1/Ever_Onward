@@ -33,7 +33,7 @@ public class enemyDetection : MonoBehaviour
         CarryOutDetection();
         if (isCharge) GetComponent<NavMeshAgent>().speed = 10000f;
         else GetComponent<NavMeshAgent>().speed = 3.5f;
-        print(GetComponent<NavMeshAgent>().speed);
+       // print(GetComponent<NavMeshAgent>().speed);
     }
 
     void SetInitialReferences()

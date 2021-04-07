@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
     //Camera movements
     void UpdateMouseLook()
     {
-        if (dialogueSystem.inConversation) return;
+        if (DialogueSystem.inConversation) return;
         Vector2 targetmouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
         currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetmouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
@@ -89,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
     //Character Movement
     void UpdateMovement()
     {
-        if (dialogueSystem.inConversation)
+        if (DialogueSystem.inConversation)
         {
             return;
         }

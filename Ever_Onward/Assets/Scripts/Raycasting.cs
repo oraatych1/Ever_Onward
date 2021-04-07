@@ -104,7 +104,7 @@ public class Raycasting : MonoBehaviour
             {
                 //raycast hit controller in scene
 
-                if (dialogueSystem.inConversation == false)
+                if (DialogueSystem.inConversation == false)
                 {
                     DialogueTrigger dialogueTrigger = hit.transform.GetComponent<DialogueTrigger>();
                     if (dialogueTrigger != null) dialogueTrigger.TriggerDialogue();

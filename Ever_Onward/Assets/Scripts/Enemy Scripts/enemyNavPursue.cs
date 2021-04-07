@@ -54,6 +54,7 @@ namespace S3
                     myEnemyMaster.CallEventEnemyWalking();
                     myEnemyMaster.isOnRoute = true;
                     enemyText.enemyState = 3;
+                    myNavMeshAgent.speed = 8;
                 }
             }
         }

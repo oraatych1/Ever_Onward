@@ -15,6 +15,8 @@ public class HealthAndManaSystem : MonoBehaviour
     public Sprite heartHalf;
     public Sprite heartEmpty;
 
+    public float manaRegenTimer = 0f;
+
     public static int mana { get; set; }
     public int manaMax = 6;
     public Image mana1;
@@ -32,6 +34,8 @@ public class HealthAndManaSystem : MonoBehaviour
     public void Update()
     {
         print(mana);
+        ManaRegen();
+        if (manaRegenTimer >= 0) manaRegenTimer -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.F)) health--;
         switch (health)
         {
@@ -132,6 +136,22 @@ public class HealthAndManaSystem : MonoBehaviour
         if (health <= 0) Die();
     }
 
+    public void ManaRegen()
+    {
+
+
+        if (mana <= 5)
+        {
+            if (manaRegenTimer <= 0)
+            {
+                mana += 1;
+                manaRegenTimer = .75f;
+            }
+        }
+
+        if (mana == 6) return;
+
+    }
 
     public void Die()
     {

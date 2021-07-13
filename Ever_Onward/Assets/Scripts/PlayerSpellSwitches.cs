@@ -72,7 +72,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                 //behavoir
                 if (spell.windPresssed)
                 {
-                    print("PEW PEW");
+                    //print("PEW PEW");
                     if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0)
                     {
                         spell.SpawnWindProjectile();

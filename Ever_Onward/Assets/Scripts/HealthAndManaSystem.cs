@@ -33,7 +33,7 @@ public class HealthAndManaSystem : MonoBehaviour
     }
     public void Update()
     {
-        print(mana);
+        //print(mana);
         ManaRegen();
         if (manaRegenTimer >= 0) manaRegenTimer -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.F)) health--;

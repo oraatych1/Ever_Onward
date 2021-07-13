@@ -27,7 +27,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void Update()
     {
-        print(inConversation);
+        //print(inConversation);
     }
 
     public void StartDialogue(Dialogue dialogue)

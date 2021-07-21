@@ -77,6 +77,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                     {
                         spell.SpawnWindProjectile();
                         HealthAndManaSystem.mana--;
+                        HealthAndManaSystem.manaRegenTimer = 3f;
                     }
                 }
 
@@ -93,11 +94,16 @@ public class PlayerSpellSwitches : MonoBehaviour
             public override State Update()
             {
                 //behavoir
-                if (spell.grassPressed)
+                if(spell.grassPressed)
                 {
-                    print("GRASS SPELL");
-                    // if (Input.GetButtonDown("Fire1")) spell.SpawnWindProjectile();
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0)
+                    {
+                        //print("GRASS SPELL");
+                        HealthAndManaSystem.manaRegenTimer = 3f;
+                        // if (Input.GetButtonDown("Fire1")) spell.SpawnWindProjectile();
+                    }
                 }
+                
 
                 if (spell.windPresssed) return new States.Wind();
                 if (spell.lightPressed) return new States.Light();
@@ -112,11 +118,13 @@ public class PlayerSpellSwitches : MonoBehaviour
                 //behavoir
                 if (spell.lightPressed)
                 {
-                    print("LIGHT CLASS");
-                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0)
+                    //print("LIGHT CLASS");
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0 && HealthAndManaSystem.health < 6)
                     {
                         spell.SpawnLightAOE();
                         HealthAndManaSystem.mana --;
+                        HealthAndManaSystem.manaRegenTimer = 3f;
+                        HealthAndManaSystem.health++;
                     }
                 }
 
@@ -166,7 +174,7 @@ public class PlayerSpellSwitches : MonoBehaviour
     void Update()
     {
         if (state == null) SwitchState(new States.Wind());
-        if (state != null) SwitchState(state.Update());
+        else SwitchState(state.Update());
 
         // print(currentSpellState);
         //print(whirlwindCombo);
@@ -182,12 +190,9 @@ public class PlayerSpellSwitches : MonoBehaviour
                 seedSiphonCombo = false;
                 brambleBlastCombo = false;
 
-                if (Input.GetButton("Shortcut2")) currentSpellState = SpellState.Grass;
-                if (Input.GetButton("Shortcut3")) currentSpellState = SpellState.Light;
+                if (Input.GetButton("Shortcut2")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.BrambleBlast : SpellState.Grass;
+                if (Input.GetButton("Shortcut3")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.Whirlwind : SpellState.Light;
 
-                //combos
-                if (Input.GetKey(KeyCode.LeftShift) && Input.GetButton("Shortcut3")) currentSpellState = SpellState.Whirlwind;
-                if (Input.GetKey(KeyCode.LeftShift) && Input.GetButton("Shortcut2")) currentSpellState = SpellState.BrambleBlast;
 
                 break;
 
@@ -201,12 +206,8 @@ public class PlayerSpellSwitches : MonoBehaviour
                 seedSiphonCombo = false;
                 brambleBlastCombo = false;
 
-                if (Input.GetButton("Shortcut1")) currentSpellState = SpellState.Wind;
-                if (Input.GetButton("Shortcut3")) currentSpellState = SpellState.Light;
-
-                //combos
-                if (Input.GetKey(KeyCode.LeftShift) && Input.GetButton("Shortcut3")) currentSpellState = SpellState.SeedSiphon;
-                if (Input.GetKey(KeyCode.LeftShift) && Input.GetButton("Shortcut1")) currentSpellState = SpellState.BrambleBlast;
+                if (Input.GetButton("Shortcut1")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.BrambleBlast : SpellState.Wind;
+                if (Input.GetButton("Shortcut3")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.SeedSiphon : SpellState.Light;
 
 
 
@@ -222,12 +223,9 @@ public class PlayerSpellSwitches : MonoBehaviour
                 brambleBlastCombo = false;
 
                 activeSpell.sprite = lightImg;
-                if (Input.GetButton("Shortcut1")) currentSpellState = SpellState.Wind;
-                if (Input.GetButton("Shortcut2")) currentSpellState = SpellState.Grass;
+                if (Input.GetButton("Shortcut1")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.BrambleBlast : SpellState.Wind;
+                if (Input.GetButton("Shortcut2")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.SeedSiphon : SpellState.Grass;
 
-                //combos
-                if (Input.GetKey(KeyCode.LeftShift) && Input.GetButton("Shortcut2")) currentSpellState = SpellState.SeedSiphon;
-                if (Input.GetKey(KeyCode.LeftShift) && Input.GetButton("Shortcut1")) currentSpellState = SpellState.BrambleBlast;
 
                 break;
 

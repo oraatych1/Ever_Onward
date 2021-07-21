@@ -15,7 +15,7 @@ public class HealthAndManaSystem : MonoBehaviour
     public Sprite heartHalf;
     public Sprite heartEmpty;
 
-    public float manaRegenTimer = 0f;
+    public static float manaRegenTimer = 0f;
 
     public static int mana { get; set; }
     public int manaMax = 6;
@@ -37,82 +37,15 @@ public class HealthAndManaSystem : MonoBehaviour
         ManaRegen();
         if (manaRegenTimer >= 0) manaRegenTimer -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.F)) health--;
-        switch (health)
-        {
-            case 0:
-                heart1.sprite = heartEmpty;
-                heart2.sprite = heartEmpty;
-                heart3.sprite = heartEmpty;
-                break;
-            case 1:
-                heart1.sprite = heartHalf;
-                heart2.sprite = heartEmpty;
-                heart3.sprite = heartEmpty;
-                break;
-            case 2:
-                heart1.sprite = heartFull;
-                heart2.sprite = heartEmpty;
-                heart3.sprite = heartEmpty;
-                break;
-            case 3:
-                heart1.sprite = heartFull;
-                heart2.sprite = heartHalf;
-                heart3.sprite = heartEmpty;
-                break;
-            case 4:
-                heart1.sprite = heartFull;
-                heart2.sprite = heartFull;
-                heart3.sprite = heartEmpty;
-                break;
-            case 5:
-                heart1.sprite = heartFull;
-                heart2.sprite = heartFull;
-                heart3.sprite = heartHalf;
-                break;
-            case 6:
-                heart1.sprite = heartFull;
-                heart2.sprite = heartFull;
-                heart3.sprite = heartFull;
-                break;
-        }
-        switch (mana)
-        {
-            case 0:
-                mana1.sprite = manaEmpty;
-                mana2.sprite = manaEmpty;
-                mana3.sprite = manaEmpty;
-                break;
-            case 1:
-                mana1.sprite = manaHalf;
-                mana2.sprite = manaEmpty;
-                mana3.sprite = manaEmpty;
-                break;
-            case 2:
-                mana1.sprite = manaFull;
-                mana2.sprite = manaEmpty;
-                mana3.sprite = manaEmpty;
-                break;
-            case 3:
-                mana1.sprite = manaFull;
-                mana2.sprite = manaHalf;
-                mana3.sprite = manaEmpty;
-                break;
-            case 4:
-                mana1.sprite = manaFull;
-                mana2.sprite = manaFull;
-                mana3.sprite = manaEmpty;
-                break;
-            case 5:
-                mana1.sprite = manaFull;
-                mana2.sprite = manaFull;
-                mana3.sprite = manaHalf;
-                break;
-            case 6:
-                mana1.sprite = manaFull;
-                mana2.sprite = manaFull;
-                mana3.sprite = manaFull;
-                break;
-        }
+
+        heart1.sprite = (health == 0) ? heartEmpty : (health == 1) ? heartHalf : heartFull;
+        heart2.sprite = (health <= 2) ? heartEmpty : (health == 3) ? heartHalf : heartFull;
+        heart3.sprite = (health <= 4) ? heartEmpty : (health == 5) ? heartHalf : heartFull;
+
+        mana1.sprite = (mana == 0) ? manaEmpty : (mana == 1) ? manaHalf : manaFull;
+        mana2.sprite = (mana <= 2) ? manaEmpty : (mana == 3) ? manaHalf : manaFull;
+        mana3.sprite = (mana <= 4) ? manaEmpty : (mana == 5) ? manaHalf : manaFull;
+
     }
     public void UseMana(int amt)
     {
@@ -144,12 +77,12 @@ public class HealthAndManaSystem : MonoBehaviour
         {
             if (manaRegenTimer <= 0)
             {
-                mana += 1;
-                manaRegenTimer = .75f;
+                mana++; 
+                manaRegenTimer = 3f;
             }
         }
 
-        if (mana == 6) return;
+        else return;
 
     }
 

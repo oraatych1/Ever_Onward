@@ -7,6 +7,8 @@ public class AOE : MonoBehaviour
 
     private float lifeSpan = 3;
     private float age = 0;
+    private float radius = 0f;
+    private int enemiesInRange = 0;
     // Start is called before the first frame update
     void Start()
     {

@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Wind
   - Enemy
+  - Siphon
+  - Bramble
   layers:
   - Default
   - TransparentFX

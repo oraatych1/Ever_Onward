@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class AIDamage : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class AIDamage : MonoBehaviour
     public Material[] thoseMats;
     Material[] theseMats;
     Renderer rend;
+
+    private float siphonStunTimer = 3f;
+    private bool isStunned = false;
+    private float saveSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +24,24 @@ public class AIDamage : MonoBehaviour
         thisMat = GetComponent<Renderer>().material;
         currentlyAssignedMaterials = GetComponent<Renderer>().materials;
         theseMats = GetComponent<Renderer>().materials;
+    }
+
+    private void Update()
+    {
+        if(isStunned)
+        {
+            if (GetComponentInParent<NavMeshAgent>().speed != 0) saveSpeed = GetComponentInParent<NavMeshAgent>().speed;
+            
+            GetComponentInParent<NavMeshAgent>().speed = 0;
+            siphonStunTimer -= Time.deltaTime;
+            if(siphonStunTimer <= 0)
+            {
+                GetComponentInParent<NavMeshAgent>().speed = saveSpeed;
+                isStunned = false;
+                siphonStunTimer = 3f;
+
+            }
+        }
     }
     void OnTriggerEnter(Collider other)
     {
@@ -30,7 +53,6 @@ public class AIDamage : MonoBehaviour
             //currentlyAssignedMaterials[1] = thatMat;
             GetComponent<Renderer>().materials = thoseMats;
             rend.materials = thoseMats; 
-            print(currentlyAssignedMaterials);
             if (health <= 0)
             {
                 for (int i = 50; i > 0; i--)
@@ -41,10 +63,42 @@ public class AIDamage : MonoBehaviour
             }
 
         }
+
+        if(other.tag == "Bramble")
+        {
+            health -= 3;
+            GetComponent<Renderer>().materials = thoseMats;
+            rend.materials = thoseMats;
+            if (health <= 0)
+            {
+                for (int i = 50; i > 0; i--)
+                {
+                    Instantiate(cube, this.transform.position, this.transform.rotation);
+                }
+                Destroy(gameObject);
+            }
+        }
+
+        if(other.tag == "Siphon")
+        {
+            health--;
+            GetComponent<Renderer>().materials = thoseMats;
+            rend.materials = thoseMats;
+            if (health <= 0)
+            {
+                for (int i = 50; i > 0; i--)
+                {
+                    Instantiate(cube, this.transform.position, this.transform.rotation);
+                }
+                Destroy(gameObject);
+            }
+            isStunned = true;
+            siphonStunTimer = 3f;
+        }
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Wind")
+        if (other.tag == "Wind" || other.tag == "Bramble" || other.tag == "Siphon")
         {
             GetComponent<Renderer>().materials = theseMats;
             rend.materials = theseMats;

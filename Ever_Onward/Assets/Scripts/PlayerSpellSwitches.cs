@@ -11,6 +11,8 @@ public class PlayerSpellSwitches : MonoBehaviour
     public Sprite natureImg;
     public Projectile WindProjectile;
     public AOE LightAOE;
+    public AOE BrambleAOE;
+    public AOE SiphonAOE;
     private CharacterController player;
     //public DialogueSystem dialogue;
    
@@ -134,25 +136,34 @@ public class PlayerSpellSwitches : MonoBehaviour
                 //transitions
             }
         }
-        /*
+        
         public class Whirlwind : State
         {
             public float WhirlwindCooldown = 0f;
             public override void OnStart(PlayerSpellSwitches spell)
             {
-                WhirlwindCooldown = 5;
+                WhirlwindCooldown = 1f;
             }
             public override State Update()
             {
-                WhirlwindCooldown--;
+                WhirlwindCooldown -= Time.deltaTime;
                 //behavoir
                 if (spell.whirlwindCombo)
                 {
                     print("Whirlwind CLASS combo");
-                    
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 1)
+                    {
+                        // Find what the player is looking at
+
+                        // Teleport the player there
+
+                        // Take mana cost
+                    }
+
+
                 }
 
-                if (WhirlwindCooldown <= 0) return new States.Wind();
+                if (WhirlwindCooldown <= 0) return new States.Light();
                 if (spell.windPresssed) return new States.Wind();
                 if (spell.grassPressed) return new States.Grass();
                 if (spell.lightPressed) return new States.Light();
@@ -160,7 +171,73 @@ public class PlayerSpellSwitches : MonoBehaviour
                 //transitions
             }
         }
-        */
+        public class SeedSiphon : State
+        {
+            public float siphonCooldown = 0f;
+            public override void OnStart(PlayerSpellSwitches spell)
+            {
+                siphonCooldown = 1f;
+            }
+            public override State Update()
+            {
+                siphonCooldown -= Time.deltaTime;
+                if(spell.seedSiphonCombo)
+                {
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 1)
+                    {
+                        // Summon AOE
+
+                        // Take mana cost
+
+                        // Damage and freeze all enemies in AOE (DONE)
+
+                        // Find number of enemies hit by AOE
+
+                        // For each enemy hit, restore 1 health
+
+                        
+                    }
+                }
+                if (siphonCooldown <= 0) return new States.Grass();
+                if (spell.windPresssed) return new States.Wind();
+                if (spell.grassPressed) return new States.Grass();
+                if (spell.lightPressed) return new States.Light();
+                return null;
+            }
+        }
+
+        public class BrambleBlast : State
+        {
+            public float brambleCooldown = 0f;
+
+            public override void OnStart(PlayerSpellSwitches spell)
+            {
+                brambleCooldown = 1f;
+            }
+
+            public override State Update()
+            {
+                brambleCooldown -= Time.deltaTime;
+
+                if(spell.brambleBlastCombo)
+                {
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 1)
+                    {
+                        // Summon AOE
+
+                        // Take mana cost
+
+                        // Deal damage to enemies in AOE
+                    }
+                }
+                if (brambleCooldown <= 0) return new States.Wind();
+                if (spell.windPresssed) return new States.Wind();
+                if (spell.grassPressed) return new States.Grass();
+                if (spell.lightPressed) return new States.Light();
+                return null;
+            }
+        }
+        
     }
 
     private States.State state;
@@ -296,5 +373,15 @@ public class PlayerSpellSwitches : MonoBehaviour
 
         AOE a = Instantiate(LightAOE, transform.position, Quaternion.identity);
         
+    }
+
+    void SpawnBrambleAOE()
+    {
+
+    }
+
+    void SpawnSiphonAOE()
+    {
+
     }
 }

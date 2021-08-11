@@ -39,11 +39,11 @@ public class PlayerSpellSwitches : MonoBehaviour
     private float grassCooldown = 0f;
     private float lightCooldown = 0f;
 
-/*
+
     private float WhirlwindCooldown = 0f;
     private float SeedSiphonCooldown = 0f;
     private float BrambleBlastCooldown = 0f;
-*/
+
 
     SpellState currentSpellState = SpellState.Wind;
 
@@ -77,7 +77,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                     //print("PEW PEW");
                     if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0)
                     {
-                        spell.SpawnWindProjectile();
+                        spell.SpawnAOE("siphon");
                         HealthAndManaSystem.mana--;
                         HealthAndManaSystem.manaRegenTimer = 3f;
                     }
@@ -123,7 +123,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                     //print("LIGHT CLASS");
                     if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0 && HealthAndManaSystem.health < 6)
                     {
-                        spell.SpawnLightAOE();
+                        spell.SpawnAOE("light");
                         HealthAndManaSystem.mana --;
                         HealthAndManaSystem.manaRegenTimer = 3f;
                         HealthAndManaSystem.health++;
@@ -151,7 +151,7 @@ public class PlayerSpellSwitches : MonoBehaviour
                 if (spell.whirlwindCombo)
                 {
                     print("Whirlwind CLASS combo");
-                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 1)
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 2)
                     {
                         // Find what the player is looking at
 
@@ -176,26 +176,29 @@ public class PlayerSpellSwitches : MonoBehaviour
             public float siphonCooldown = 0f;
             public override void OnStart(PlayerSpellSwitches spell)
             {
+                
                 siphonCooldown = 1f;
             }
             public override State Update()
             {
-                siphonCooldown -= Time.deltaTime;
+                //siphonCooldown -= Time.deltaTime;
                 if(spell.seedSiphonCombo)
                 {
-                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 1)
+                    
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 2)
                     {
                         // Summon AOE
-
+                        spell.SpawnAOE("siphon");
                         // Take mana cost
-
+                        HealthAndManaSystem.mana -= 2;
+                        HealthAndManaSystem.manaRegenTimer = 3f;
                         // Damage and freeze all enemies in AOE (DONE)
 
                         // Find number of enemies hit by AOE
 
                         // For each enemy hit, restore 1 health
 
-                        
+
                     }
                 }
                 if (siphonCooldown <= 0) return new States.Grass();
@@ -212,22 +215,24 @@ public class PlayerSpellSwitches : MonoBehaviour
 
             public override void OnStart(PlayerSpellSwitches spell)
             {
+                
                 brambleCooldown = 1f;
             }
 
             public override State Update()
             {
-                brambleCooldown -= Time.deltaTime;
+                
+                //brambleCooldown -= Time.deltaTime;
 
                 if(spell.brambleBlastCombo)
                 {
-                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 1)
+                    
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 2)
                     {
-                        // Summon AOE
-
-                        // Take mana cost
-
-                        // Deal damage to enemies in AOE
+                        spell.SpawnAOE("bramble");
+                        HealthAndManaSystem.mana-=2;
+                        HealthAndManaSystem.manaRegenTimer = 3f;
+                   
                     }
                 }
                 if (brambleCooldown <= 0) return new States.Wind();
@@ -250,6 +255,7 @@ public class PlayerSpellSwitches : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (state == null) SwitchState(new States.Wind());
         else SwitchState(state.Update());
 
@@ -315,7 +321,10 @@ public class PlayerSpellSwitches : MonoBehaviour
                 lightPressed = false;
                 grassPressed = false;
 
-               // if (WhirlwindCooldown <= 0) currentSpellState = SpellState.Wind;
+                // if (WhirlwindCooldown <= 0) currentSpellState = SpellState.Wind;
+                if (Input.GetButton("Shortcut1")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.BrambleBlast : SpellState.Wind;
+                if (Input.GetButton("Shortcut2")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.BrambleBlast : SpellState.Grass;
+                if (Input.GetButton("Shortcut3")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.Whirlwind : SpellState.Light;
 
                 break;
 
@@ -327,8 +336,12 @@ public class PlayerSpellSwitches : MonoBehaviour
                 windPresssed = false;
                 lightPressed = false;
                 grassPressed = false;
-
-               // if (SeedSiphonCooldown <= 0) currentSpellState = SpellState.Light;
+                
+                print("Seeds!");
+                // if (SeedSiphonCooldown <= 0) currentSpellState = SpellState.Light;
+                if (Input.GetButton("Shortcut1")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.BrambleBlast : SpellState.Wind;
+                if (Input.GetButton("Shortcut2")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.BrambleBlast : SpellState.Grass;
+                if (Input.GetButton("Shortcut3")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.Whirlwind : SpellState.Light;
 
                 break;
 
@@ -340,8 +353,11 @@ public class PlayerSpellSwitches : MonoBehaviour
                 windPresssed = false;
                 lightPressed = false;
                 grassPressed = false;
-
-              // if (BrambleBlastCooldown <= 0) currentSpellState = SpellState.Grass;
+                print("Brambles!");
+                if (Input.GetButton("Shortcut1")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.BrambleBlast : SpellState.Wind;
+                if (Input.GetButton("Shortcut2")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.BrambleBlast : SpellState.Grass;
+                if (Input.GetButton("Shortcut3")) currentSpellState = (Input.GetKey(KeyCode.LeftShift)) ? SpellState.Whirlwind : SpellState.Light;
+                // if (BrambleBlastCooldown <= 0) currentSpellState = SpellState.Grass;
 
                 break;
         }
@@ -367,21 +383,25 @@ public class PlayerSpellSwitches : MonoBehaviour
 
     }
      
-    void SpawnLightAOE()
+    void SpawnAOE(string type)
     {
-        if (lightCooldown > 0) return;
-
-        AOE a = Instantiate(LightAOE, transform.position, Quaternion.identity);
+        switch(type)
+        {
+            case "light":
+                if (lightCooldown > 0) return;
+                AOE a = Instantiate(LightAOE, transform.position, Quaternion.identity);
+                break;
+            case "bramble":
+                if (BrambleBlastCooldown > 0) return;
+                AOE b = Instantiate(BrambleAOE, transform.position, Quaternion.identity);
+                break;
+            case "siphon":
+                if (SeedSiphonCooldown > 0) return;
+                AOE s = Instantiate(SiphonAOE, transform.position, Quaternion.identity);
+                break;
+        }
+        
         
     }
 
-    void SpawnBrambleAOE()
-    {
-
-    }
-
-    void SpawnSiphonAOE()
-    {
-
-    }
 }

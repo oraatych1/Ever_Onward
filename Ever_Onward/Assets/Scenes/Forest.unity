@@ -21898,6 +21898,8 @@ MonoBehaviour:
   natureImg: {fileID: 21300000, guid: 483d8b0e642a4e4469abdaed2adb193a, type: 3}
   WindProjectile: {fileID: 5898925111313634789, guid: a3ce537c7b69a854aa937df2cf88dd87, type: 3}
   LightAOE: {fileID: 9197786561545400143, guid: 894f0fbcb1931f54e8352b077f5dabd3, type: 3}
+  BrambleAOE: {fileID: -8155002045792043750, guid: 38b9fca5e94c9054e9685a7476b7c9a7, type: 3}
+  SiphonAOE: {fileID: -8155002045792043750, guid: 9a1745f3138a6e149a4fdfea3d6d7438, type: 3}
 --- !u!114 &1906541129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21929,7 +21931,6 @@ MonoBehaviour:
   heartFull: {fileID: 21300000, guid: 0b5217862b1181f4abc2d362f7753a15, type: 3}
   heartHalf: {fileID: 21300000, guid: 7d508bc31a78d51439dcde28a94fa29e, type: 3}
   heartEmpty: {fileID: 21300000, guid: dc39edb7f848f3245b36dcb862f48ee4, type: 3}
-  manaRegenTimer: 0
   manaMax: 6
   mana1: {fileID: 1713071460}
   mana2: {fileID: 1729630110}

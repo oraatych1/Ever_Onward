@@ -15,7 +15,7 @@ public class AIDamage : MonoBehaviour
     Renderer rend;
 
     private float siphonStunTimer = 3f;
-    private bool isStunned = false;
+    public bool isStunned = false;
     private float saveSpeed;
     // Start is called before the first frame update
     void Start()

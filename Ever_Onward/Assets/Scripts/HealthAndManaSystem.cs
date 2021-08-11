@@ -46,6 +46,12 @@ public class HealthAndManaSystem : MonoBehaviour
         mana2.sprite = (mana <= 2) ? manaEmpty : (mana == 3) ? manaHalf : manaFull;
         mana3.sprite = (mana <= 4) ? manaEmpty : (mana == 5) ? manaHalf : manaFull;
 
+        if (mana < 0) mana = 0;
+        if (mana > manaMax) mana = manaMax;
+
+        if (health < 0) health = 0;
+        if (health > healthMax) health = healthMax;
+
     }
     public void UseMana(int amt)
     {

@@ -83,7 +83,10 @@ public class PlayerSpellSwitches : MonoBehaviour
                 //if (!spell.windPresssed) return new States.Wind();
                 if (spell.grassPressed) return new States.Grass();
                 if (spell.lightPressed) return new States.Light();
-                //if (spell.whirlwindCombo) return new States.Whirlwind();
+                if (spell.whirlwindCombo) return new States.Whirlwind();
+                if (spell.seedSiphonCombo) return new States.SeedSiphon();
+                if (spell.brambleBlastCombo) return new States.BrambleBlast();
+
                 return null;
                 //transitions
             }
@@ -106,6 +109,9 @@ public class PlayerSpellSwitches : MonoBehaviour
 
                 if (spell.windPresssed) return new States.Wind();
                 if (spell.lightPressed) return new States.Light();
+                if (spell.whirlwindCombo) return new States.Whirlwind();
+                if (spell.seedSiphonCombo) return new States.SeedSiphon();
+                if (spell.brambleBlastCombo) return new States.BrambleBlast();
                 return null;
                 //transitions
             }
@@ -129,6 +135,9 @@ public class PlayerSpellSwitches : MonoBehaviour
 
                 if (spell.windPresssed) return new States.Wind();
                 if (spell.grassPressed) return new States.Grass();
+                if (spell.whirlwindCombo) return new States.Whirlwind();
+                if (spell.seedSiphonCombo) return new States.SeedSiphon();
+                if (spell.brambleBlastCombo) return new States.BrambleBlast();
                 return null;
                 //transitions
             }
@@ -138,10 +147,7 @@ public class PlayerSpellSwitches : MonoBehaviour
         {
 
             public float WhirlwindCooldown = 0f;
-            public override void OnStart(PlayerSpellSwitches spell)
-            {
-                WhirlwindCooldown = 1f;
-            }
+
             public override State Update()
             {
                 WhirlwindCooldown -= Time.deltaTime;
@@ -165,6 +171,8 @@ public class PlayerSpellSwitches : MonoBehaviour
                 if (spell.windPresssed) return new States.Wind();
                 if (spell.grassPressed) return new States.Grass();
                 if (spell.lightPressed) return new States.Light();
+                if (spell.seedSiphonCombo) return new States.SeedSiphon();
+                if (spell.brambleBlastCombo) return new States.BrambleBlast();
                 return null;
                 //transitions
             }
@@ -208,28 +216,23 @@ public class PlayerSpellSwitches : MonoBehaviour
                 if (spell.windPresssed) return new States.Wind();
                 if (spell.grassPressed) return new States.Grass();
                 if (spell.lightPressed) return new States.Light();
+                if (spell.whirlwindCombo) return new States.Whirlwind();
+                if (spell.brambleBlastCombo) return new States.BrambleBlast();
                 return null;
             }
         }
 
         public class BrambleBlast : State
         {
-            public float brambleCooldown = 0f;
 
-            public override void OnStart(PlayerSpellSwitches spell)
-            {
-                
-                brambleCooldown = 1f;
-            }
 
             public override State Update()
             {
 
                 //brambleCooldown -= Time.deltaTime;
                 print("Blam!");
-                if (spell.brambleBlastCombo)
-                {
-                    
+               // if (spell.brambleBlastCombo)
+              //  {
                     if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 1)
                     {
                         
@@ -238,11 +241,13 @@ public class PlayerSpellSwitches : MonoBehaviour
                         HealthAndManaSystem.manaRegenTimer = 3f;
                    
                     }
-                }
+               // }
                 //if (brambleCooldown <= 0) return new States.Wind();
                 if (spell.windPresssed) return new States.Wind();
                 if (spell.grassPressed) return new States.Grass();
                 if (spell.lightPressed) return new States.Light();
+                if (spell.whirlwindCombo) return new States.Whirlwind();
+                if (spell.seedSiphonCombo) return new States.SeedSiphon();
                 return null;
             }
         }

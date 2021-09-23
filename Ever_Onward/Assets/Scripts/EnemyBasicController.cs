@@ -125,10 +125,10 @@ using UnityEngine.AI;
         public PlayerMovement PM;
         public Transform myTarget;
         private NavMeshHit navHit;
-    public float wanderRange = 20;
-    private Vector3 wanderTarget;
-    private float wanderCheckRate;
-    private float wanderNextCheck;
+        public float wanderRange = 20;
+        private Vector3 wanderTarget;
+        private float wanderCheckRate;
+        private float wanderNextCheck;
 
         //Layer Masks
         public LayerMask playerLayer;
@@ -142,25 +142,25 @@ using UnityEngine.AI;
         // Start is called before the first frame update
         void Start()
         {
-            nav = GetComponent<NavMeshAgent>();
-            myTransform = transform;
+        if (GetComponent<NavMeshAgent>() != null)
+        {
+            myNavMeshAgent = GetComponent<NavMeshAgent>();
+        }
+        myTransform = transform;
 
             health = healthMax;
             mana = manaMax;
-            wanderCheckRate = Random.Range(.01f, .2f);
+            wanderCheckRate = Random.Range(.01f, .1f);
     }
 
-        // Update is called once per frame
         void Update()
         {
-
             if(Time.time > wanderNextCheck)
             {
-                wanderNextCheck = Time.time + wanderCheckRate;
                 CheckIfIShouldWander();
+                wanderNextCheck = Time.time + wanderCheckRate;
             }
 
-            //print(myTarget);
             if (health >= 100) health = 100;
 
            healthSystem = health;
@@ -175,7 +175,7 @@ using UnityEngine.AI;
 
             if (state == null) SwitchState(new States.Idle());
             if (state != null) SwitchState(state.Update());
-            if (myTarget != null) nav.SetDestination(myTarget.position);
+            if (myTarget != null) myNavMeshAgent.SetDestination(myTarget.position);
         }
         
         void CheckIfIShouldWander()
@@ -186,15 +186,22 @@ using UnityEngine.AI;
            
                 if(RandomWanderTarget(myTransform.position, wanderRange, out wanderTarget))
                 {
-                print(wanderTarget);
+                print("hello krieg");
                     myNavMeshAgent.SetDestination(wanderTarget);
                     isOnRoute = true;
                     myNavMeshAgent.speed = 3.5f;
                 }
             }
-        }
+            else if(isOnRoute)
+            {
+                if (myNavMeshAgent.remainingDistance < myNavMeshAgent.stoppingDistance)
+                {
+                    isOnRoute = false;
+                }
+            }
+    }
 
-    //pie
+    
         bool RandomWanderTarget(Vector3 centre, float range, out Vector3 result)
         {
             Vector3 randomPoint = centre + Random.insideUnitSphere * wanderRange;
@@ -243,13 +250,12 @@ using UnityEngine.AI;
             }
         }
 
-            
-
         //sets the target
         public void SetTarget(Transform targetTransform)
         {
             myTarget = targetTransform;
         }
+
         //looks for the enemy by shooting out a raycast
         void CarryOutDetection()
         {
@@ -267,7 +273,7 @@ using UnityEngine.AI;
                         {
                             inRange = true;
                             myTarget = potentialTargetCollider.transform;
-                        print(myTarget);
+                        
                             break;
                         }
                     }

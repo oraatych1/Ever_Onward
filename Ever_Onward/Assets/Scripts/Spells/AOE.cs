@@ -5,7 +5,7 @@ using UnityEngine;
 public class AOE : MonoBehaviour
 {
 
-    private float lifeSpan = .75f;
+    private float lifeSpan = 1f;
     private float age = 0;
     private int maxRadius = 2;
     private int enemiesInRange = 0;

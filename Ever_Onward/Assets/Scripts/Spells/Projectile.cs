@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
 
     private float lifeSpan = 3;
     private float age = 0;
+    private bool isGrass = false;
 
     private void Start()
     {
@@ -30,5 +31,7 @@ public class Projectile : MonoBehaviour
         }
 
         transform.position += velocity * Time.deltaTime;
+
+        //if()
     }
 }

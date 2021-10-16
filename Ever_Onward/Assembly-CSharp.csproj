@@ -63,16 +63,23 @@
      <Compile Include="Assets\Scripts\InteractiveItem.cs" />
      <Compile Include="Assets\Scripts\Spells\Projectile.cs" />
      <Compile Include="Assets\Scripts\MenuContoller.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\enemyProjectile.cs" />
      <Compile Include="Assets\Scripts\Master Scripts\gameManagerReferences.cs" />
      <Compile Include="Assets\Scripts\Master Scripts\enemyMaster.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\enemyText.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\enemyNavWander.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\enemyFire.cs" />
      <Compile Include="Assets\Scripts\Master Scripts\gameManagerMaster.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\AIDamage.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\enemyCharge.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\enemyNavPursue.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Knockback.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\enemySprite.cs" />
+     <Compile Include="Assets\Scripts\Destroy.cs" />
+     <Compile Include="Assets\Scripts\CameraHandler.cs" />
      <Compile Include="Assets\Scripts\Master Scripts\playerMovement.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\AIShoot.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -296,7 +303,7 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>E:/FERRIS YEAR 3/Semester2/498/EverOnward/Ever_Onward/Ever_Onward/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -644,31 +651,31 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>E:/FERRIS YEAR 3/Semester2/498/EverOnward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>E:/FERRIS YEAR 3/Semester2/498/EverOnward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>E:/FERRIS YEAR 3/Semester2/498/EverOnward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>E:/FERRIS YEAR 3/Semester2/498/EverOnward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>E:/FERRIS YEAR 3/Semester2/498/EverOnward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>E:/FERRIS YEAR 3/Semester2/498/EverOnward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>E:/FERRIS YEAR 3/Semester2/498/EverOnward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>E:/FERRIS YEAR 3/Semester2/498/EverOnward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/FERRIS YEAR 3/Semester2/498/EverOnward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

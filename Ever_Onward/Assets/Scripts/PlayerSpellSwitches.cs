@@ -8,6 +8,8 @@ public class PlayerSpellSwitches : MonoBehaviour
     public Image activeSpell;
     public Sprite windImg, lightImg, natureImg, whirlwindImg, brambleImg, siphonImg;
     public Projectile WindProjectile;
+    public Projectile GrassProjectile;
+    public AOE LightAOE;
     public AOE LightAOE, BrambleAOE, SiphonAOE;
     private CharacterController player;
     //public DialogueSystem dialogue;
@@ -98,6 +100,10 @@ public class PlayerSpellSwitches : MonoBehaviour
                 //behavoir
                 if(spell.grassPressed)
                 {
+                    print("GRASS SPELL");
+                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0) 
+                        spell.SpawnGrassProjectile();
+                        HealthAndManaSystem.mana--;
                     if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0)
                     {
                         //print("GRASS SPELL");
@@ -397,6 +403,18 @@ public class PlayerSpellSwitches : MonoBehaviour
         p.InitBullet(transform.forward * 20);
 
     }
+
+    void SpawnGrassProjectile()
+    {
+        if (grassCooldown > 0) return;
+
+        Projectile p = Instantiate(GrassProjectile, transform.position, Quaternion.identity);
+        p.InitBullet(transform.forward * 20);
+
+
+    }
+
+    void SpawnLightAOE()
      
     void SpawnAOE(string type)
     {

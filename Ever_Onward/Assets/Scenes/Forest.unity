@@ -2354,6 +2354,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ce6ec4102cef6384f8a015a853dbeec4, type: 3}
   m_PrefabInstance: {fileID: 1599946995}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &268522261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268522262}
+  m_Layer: 10
+  m_Name: Camera Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268522262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268522261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1511200032}
+  m_Father: {fileID: 1374480712}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &275850302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3077,7 +3108,7 @@ Transform:
   m_Children:
   - {fileID: 920515459}
   m_Father: {fileID: 1906541134}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &338484219
 MeshFilter:
@@ -18341,6 +18372,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 76257f4a5bd5815429f12aee126eca20, type: 3}
   m_PrefabInstance: {fileID: 487740422}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1374480711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1374480712}
+  - component: {fileID: 1374480713}
+  m_Layer: 0
+  m_Name: Camera Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1374480712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374480711}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -68.45, y: 14.650002, z: 59.735245}
+  m_LocalScale: {x: 0.19170345, y: 0.19170345, z: 0.19170345}
+  m_Children:
+  - {fileID: 268522262}
+  m_Father: {fileID: 1906541134}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1374480713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374480711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142d582f6f06f014ba0d97b4d46c9e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTransform: {fileID: 1906541134}
+  cameraTransform: {fileID: 1511200032}
+  cameraPivotTransform: {fileID: 268522262}
+  lookSpeed: 0.1
+  followSpeed: 0.1
+  pivotSpeed: 0.03
+  maximumPivot: 35
+  cameraSphereRadius: 0.2
+  cameraCollisionOffset: 0.2
+  minimumCollisionOffset: 0.2
 --- !u!1 &1380311542
 GameObject:
   m_ObjectHideFlags: 0
@@ -19736,12 +19821,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511200031}
   m_LocalRotation: {x: 0.23558748, y: -0, z: -0, w: 0.9718532}
-  m_LocalPosition: {x: 0, y: 2.42, z: -3.58}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 357.0619, y: -63.79647, z: -330.27704}
+  m_LocalScale: {x: 5.21639, y: 5.2163906, z: 5.2163906}
   m_Children:
   - {fileID: 535321834}
-  m_Father: {fileID: 1906541134}
-  m_RootOrder: 1
+  m_Father: {fileID: 268522262}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 27.253, y: 0, z: 0}
 --- !u!114 &1511200033
 MonoBehaviour:
@@ -23987,6 +24072,7 @@ MonoBehaviour:
   brambleImg: {fileID: 21300000, guid: af4b2e633f145634db402ea60869a94a, type: 3}
   siphonImg: {fileID: 21300000, guid: 0857e4fa5636ef147a016f16cc369554, type: 3}
   WindProjectile: {fileID: 5898925111313634789, guid: a3ce537c7b69a854aa937df2cf88dd87, type: 3}
+  GrassProjectile: {fileID: 0}
   LightAOE: {fileID: 9197786561545400143, guid: 894f0fbcb1931f54e8352b077f5dabd3, type: 3}
   BrambleAOE: {fileID: -8155002045792043750, guid: 38b9fca5e94c9054e9685a7476b7c9a7, type: 3}
   SiphonAOE: {fileID: -8155002045792043750, guid: 9a1745f3138a6e149a4fdfea3d6d7438, type: 3}
@@ -24099,8 +24185,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4367495262760410291}
-  - {fileID: 1511200032}
   - {fileID: 338484217}
+  - {fileID: 1374480712}
   - {fileID: 1282984168}
   m_Father: {fileID: 0}
   m_RootOrder: 1

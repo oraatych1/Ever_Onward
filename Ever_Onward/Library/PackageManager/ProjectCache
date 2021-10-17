@@ -1,18 +1,22 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
+    m_FilePath: G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Packages/manifest.json
     m_FilePath: C:/Users/lays3/Desktop/EVER_ONWARD/IDEK/Ever_Onward/Ever_Onward/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+      ticks: 637522203698674450
       ticks: 637491185432694363
     m_Hash: 4129500968
   m_LockFileStatus:
+    m_FilePath: G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Packages/packages-lock.json
     m_FilePath: C:/Users/lays3/Desktop/EVER_ONWARD/IDEK/Ever_Onward/Ever_Onward/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+      ticks: 637624361858586095
       ticks: 637674097834633012
     m_Hash: 1554650196
 m_EmbeddedPackageManifests:
@@ -25,6 +29,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.9
       source: 1
+      resolvedPath: G:\FSU DAGD Classes\[FSU] DAGD 498 - Seminar\Ever Onward\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.collab-proxy@1.3.9
       resolvedPath: C:\Users\lays3\Desktop\EVER_ONWARD\IDEK\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
@@ -57,8 +62,28 @@ m_PackageAssets:
         - 1.3.5
         - 1.3.6
         - 1.3.7
+        - 1.2.3-preview
+        - 1.2.4-preview
+        - 1.2.6
+        - 1.2.7
+        - 1.2.9
+        - 1.2.11
+        - 1.2.15
+        - 1.2.16
+        - 1.2.17-preview.3
+        - 1.3.2
+        - 1.3.3
+        - 1.3.4
+        - 1.3.5
+        - 1.3.6
+        - 1.3.7
         - 1.3.8
         - 1.3.9
+        - 2.0.0-preview.6
+        - 2.0.0-preview.8
+        - 2.0.0-preview.15
+        - 2.0.0-preview.17
+        - 2.1.0-preview.3
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -71,6 +96,11 @@ m_PackageAssets:
         - 2.1.0-preview.6
         compatible:
         - 1.3.9
+        - 2.0.0-preview.6
+        - 2.0.0-preview.8
+        - 2.0.0-preview.15
+        - 2.0.0-preview.17
+        - 2.1.0-preview.3
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -120,6 +150,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
+      resolvedPath: G:\FSU DAGD Classes\[FSU] DAGD 498 - Seminar\Ever Onward\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.ide.rider@2.0.7
       resolvedPath: C:\Users\lays3\Desktop\EVER_ONWARD\IDEK\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
@@ -152,6 +183,21 @@ m_PackageAssets:
         - 2.0.0-preview
         - 2.0.1
         - 2.0.2
+        - 1.0.2
+        - 1.0.6
+        - 1.0.8
+        - 1.1.0
+        - 1.1.1
+        - 1.1.2-preview
+        - 1.1.2-preview.2
+        - 1.1.3-preview.1
+        - 1.1.4-preview
+        - 1.1.4
+        - 1.2.0-preview
+        - 1.2.1
+        - 2.0.0-preview
+        - 2.0.1
+        - 2.0.2
         - 2.0.3
         - 2.0.5
         - 2.0.7
@@ -161,6 +207,21 @@ m_PackageAssets:
         - 3.0.4
         - 3.0.5
         compatible:
+        - 1.0.2
+        - 1.0.6
+        - 1.0.8
+        - 1.1.0
+        - 1.1.1
+        - 1.1.2-preview
+        - 1.1.2-preview.2
+        - 1.1.3-preview.1
+        - 1.1.4-preview
+        - 1.1.4
+        - 1.2.0-preview
+        - 1.2.1
+        - 2.0.0-preview
+        - 2.0.1
+        - 2.0.2
         - 1.0.2
         - 1.0.6
         - 1.0.8
@@ -223,6 +284,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.5
       source: 1
+      resolvedPath: G:\FSU DAGD Classes\[FSU] DAGD 498 - Seminar\Ever Onward\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
       resolvedPath: C:\Users\lays3\Desktop\EVER_ONWARD\IDEK\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
@@ -294,6 +356,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
+      resolvedPath: G:\FSU DAGD Classes\[FSU] DAGD 498 - Seminar\Ever Onward\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.ide.vscode@1.2.3
       resolvedPath: C:\Users\lays3\Desktop\EVER_ONWARD\IDEK\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
@@ -319,10 +382,26 @@ m_PackageAssets:
         - 1.1.3
         - 1.1.4
         - 1.2.0
+        - 1.0.2
+        - 1.0.3
+        - 1.0.7
+        - 1.1.0
+        - 1.1.2
+        - 1.1.3
+        - 1.1.4
+        - 1.2.0
         - 1.2.1
         - 1.2.2
         - 1.2.3
         compatible:
+        - 1.0.2
+        - 1.0.3
+        - 1.0.7
+        - 1.1.0
+        - 1.1.2
+        - 1.1.3
+        - 1.1.4
+        - 1.2.0
         - 1.0.2
         - 1.0.3
         - 1.0.7
@@ -363,6 +442,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.19
       source: 1
+      resolvedPath: G:\FSU DAGD Classes\[FSU] DAGD 498 - Seminar\Ever Onward\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.test-framework@1.1.19
       resolvedPath: C:\Users\lays3\Desktop\EVER_ONWARD\IDEK\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.test-framework@1.1.19
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
@@ -378,6 +458,28 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 0.0.4-preview
+        - 0.0.29-preview
+        - 1.0.0
+        - 1.0.7
+        - 1.0.9
+        - 1.0.11
+        - 1.0.12
+        - 1.0.13
+        - 1.0.14
+        - 1.0.16
+        - 1.0.17
+        - 1.0.18
+        - 1.1.0
+        - 1.1.1
+        - 1.1.2
+        - 1.1.3
+        - 1.1.5
+        - 1.1.8
+        - 1.1.9
+        - 1.1.11
+        - 1.1.13
+        - 1.1.14
         - 0.0.4-preview
         - 0.0.29-preview
         - 1.0.0
@@ -454,6 +556,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.1
       source: 1
+      resolvedPath: G:\FSU DAGD Classes\[FSU] DAGD 498 - Seminar\Ever Onward\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.textmeshpro@3.0.1
       resolvedPath: C:\Users\lays3\Desktop\EVER_ONWARD\IDEK\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.textmeshpro@3.0.1
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
@@ -489,6 +592,55 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 0.1.2
+        - 1.0.21
+        - 1.0.23
+        - 1.0.25
+        - 1.0.26
+        - 1.1.0
+        - 1.2.0
+        - 1.2.1
+        - 1.2.2
+        - 1.2.3
+        - 1.2.4
+        - 1.3.0-preview
+        - 1.3.0
+        - 1.4.0-preview.1b
+        - 1.4.0-preview.2a
+        - 1.4.0-preview.3a
+        - 1.4.0
+        - 1.4.1-preview.1
+        - 1.4.1
+        - 1.5.0-preview.1
+        - 1.5.0-preview.2
+        - 1.5.0-preview.3
+        - 1.5.0-preview.4
+        - 1.5.0-preview.5
+        - 1.5.0-preview.6
+        - 1.5.0-preview.7
+        - 1.5.0-preview.8
+        - 1.5.0-preview.10
+        - 1.5.0-preview.11
+        - 2.0.0
+        - 2.0.1-preview.1
+        - 2.0.1
+        - 2.1.0-preview.1
+        - 2.1.0-preview.2
+        - 2.1.0-preview.3
+        - 2.1.0-preview.4
+        - 2.1.0-preview.5
+        - 2.1.0-preview.7
+        - 2.1.0-preview.8
+        - 2.1.0-preview.10
+        - 2.1.0-preview.11
+        - 3.0.0-preview.1
+        - 3.0.0-preview.3
+        - 3.0.0-preview.4
+        - 3.0.0-preview.5
+        - 3.0.0-preview.7
+        - 3.0.0-preview.8
+        - 3.0.0-preview.10
+        - 3.0.0-preview.11
         - 0.1.2
         - 1.0.21
         - 1.0.23
@@ -605,6 +757,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.4
       source: 1
+      resolvedPath: G:\FSU DAGD Classes\[FSU] DAGD 498 - Seminar\Ever Onward\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.timeline@1.4.4
       resolvedPath: C:\Users\lays3\Desktop\EVER_ONWARD\IDEK\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.timeline@1.4.4
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
@@ -2587,6 +2740,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.5
       source: 1
+      resolvedPath: G:\FSU DAGD Classes\[FSU] DAGD 498 - Seminar\Ever Onward\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.ext.nunit@1.0.5
       resolvedPath: C:\Users\lays3\Desktop\EVER_ONWARD\IDEK\Ever_Onward\Ever_Onward\Library\PackageCache\com.unity.ext.nunit@1.0.5
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
@@ -2603,8 +2757,16 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 0.1.5-preview
+        - 0.1.6-preview
+        - 0.1.9-preview
+        - 1.0.0
         - 1.0.5
         compatible:
+        - 0.1.5-preview
+        - 0.1.6-preview
+        - 0.1.9-preview
+        - 1.0.0
         - 1.0.5
         verified: 1.0.5
       dependencies: []
@@ -2635,5 +2797,6 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
+m_ProjectPath: G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Packages
 m_ProjectPath: C:/Users/lays3/Desktop/EVER_ONWARD/IDEK/Ever_Onward/Ever_Onward/Packages
 m_EditorVersion: 2020.2.1f1 (270dd8c3da1c)

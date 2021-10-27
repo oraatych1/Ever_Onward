@@ -9,7 +9,6 @@ public class PlayerSpellSwitches : MonoBehaviour
     public Sprite windImg, lightImg, natureImg, whirlwindImg, brambleImg, siphonImg;
     public Projectile WindProjectile;
     public Projectile GrassProjectile;
-    public AOE LightAOE;
     public AOE LightAOE, BrambleAOE, SiphonAOE;
     private CharacterController player;
     //public DialogueSystem dialogue;
@@ -414,7 +413,7 @@ public class PlayerSpellSwitches : MonoBehaviour
 
     }
 
-    void SpawnLightAOE()
+
      
     void SpawnAOE(string type)
     {

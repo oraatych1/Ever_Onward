@@ -9,7 +9,6 @@ public class PlayerSpellSwitches : MonoBehaviour
     public Sprite windImg, lightImg, natureImg, whirlwindImg, brambleImg, siphonImg;
     public Projectile WindProjectile;
     public Projectile GrassProjectile;
-    public AOE LightAOE;
     public AOE LightAOE, BrambleAOE, SiphonAOE;
     private CharacterController player;
     //public DialogueSystem dialogue;
@@ -399,8 +398,9 @@ public class PlayerSpellSwitches : MonoBehaviour
     {
         if (windCooldown > 0) return;
 
-        Projectile p = Instantiate(WindProjectile, transform.position, Quaternion.identity);
-        p.InitBullet(transform.forward * 20);
+        Projectile p = Instantiate(WindProjectile, 
+        new Vector3(transform.position.x + 0.5f, transform.position.y + 1, transform.position.z), Quaternion.identity);
+        p.InitBullet(Camera.main.transform.forward * 20);
 
     }
 
@@ -414,7 +414,7 @@ public class PlayerSpellSwitches : MonoBehaviour
 
     }
 
-    void SpawnLightAOE()
+    
      
     void SpawnAOE(string type)
     {

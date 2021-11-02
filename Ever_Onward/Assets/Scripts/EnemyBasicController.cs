@@ -308,12 +308,7 @@ using UnityEngine.AI;
             {
                 TakeDamage(5);
             }
-            /*
-            if (this.tag == ("Enemy") & other.tag == ("DamageCircle"))
-            {
-                health++;
-            }
-            */
+
         }
 
         public void TakeDamage(int amt)
@@ -335,10 +330,10 @@ using UnityEngine.AI;
         {
             if (attackCooldown <= 0)
             {
-               // print("Hello");
+
                 if (mana >= 10)
                 {
-                   // print("World");
+
                     Projectile p = Instantiate(prefabProjectile, transform.position, Quaternion.identity);
                     p.InitBullet(transform.forward * 20);
 
@@ -351,42 +346,5 @@ using UnityEngine.AI;
             if (mana <= 0) return;
 
         }
-    /*
-        void SpawnAOE()
-        {
-            if (attackCooldown <= 0)
-            {
-                print("Hello");
-                if (mana >= 15)
-                {
-                    print("World");
-                    AOE a = Instantiate(damageCircle, transform.position, Quaternion.identity);
 
-
-                    mana -= 15;
-                    manaRegenTimer = .1f;
-                    attackCooldown = .75f;
-                }
-            }
-            if (attackCooldown >= 0.1) return;
-            if (mana <= 0) return;
-
-        }
-
-        void SpawnHealthEffect()
-        {
-            if (healingSpellCooldown <= 0)
-            {
-                healingSpellCooldown = 5f;
-                if (health <= 100) health += 25;
-                if (health >= 100) return;
-                print("Healed");
-                mana -= 25;
-                manaRegenTimer = .1f;
-                if (health >= 100) health = 100;
-            }
-            if (healingSpellCooldown >= 1) return;
-
-        }
-    */
     }

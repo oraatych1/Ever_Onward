@@ -15,7 +15,7 @@ public class Knockback : MonoBehaviour
             canBeHurt = false;
             Invoke("CanHurtAgain", 1f);
         }
-        print("rtt");
+        //print("rtt");
     }
     void CanHurtAgain()
     {

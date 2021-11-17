@@ -34,7 +34,7 @@ public class EnemyBasicController : MonoBehaviour
                 //enemy.myNavMeshAgent.speed = 2.5f;
                 //if (enemy.health <= 5) return new States.Attack3();
                 if (enemy.enemySeen && enemy.isRangeEnemy || enemy.enemySeen && enemy.isRangeBoss) return new States.RangeAttack();
-                if (enemy.inRange) return new States.MeleeAttack();
+                else if (enemy.inRange) return new States.MeleeAttack();
                 return null;
             }
         }
@@ -69,7 +69,7 @@ public class EnemyBasicController : MonoBehaviour
                     
                     // enemy.myNavMeshAgent.speed = 6f;
 
-                    enemy.inRange = false;
+                    //enemy.inRange = false;
                     //transition
                     //if (enemy.healthSystem <= 50) return new States.Attack3();
                     if (!enemy.enemySeen) return new States.Idle();
@@ -104,20 +104,19 @@ public class EnemyBasicController : MonoBehaviour
     private float attackCooldown = 0f;
     private bool enemySeen = false;
 
-    //health and mana 
-    
+    //health
     public float health = 10f;
     public float healthSystem;
 
-    public float mana = 10;
-    public float manaRegenTimer = 0f;
-
+    public float tester = 20;
+    public bool lockedInPlace;
 
     //Enemy Detection
     public Transform headTransform;
     private float headCheckRate;
     private float headNextCheck;
     public float headDetectRaduis = 8;
+    public float meleeDetectRaduis = 2;
     private RaycastHit hitTarget;
 
     //general AI stuff
@@ -152,10 +151,19 @@ public class EnemyBasicController : MonoBehaviour
     public bool isStunned = false;
     private float saveSpeed;
 
+    //look at 
+    private Quaternion startingRotation;
+
+    public bool lockEnemyRotationX;
+    public bool lockEnemyRotationY;
+    public bool lockEnemyRotationZ;
+
+    //what the enemy is
     public bool isRangeEnemy = false;
     public bool isMeleeEnemy = false;
     public bool isMeleeBoss = false;
     public bool isRangeBoss = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -167,7 +175,6 @@ public class EnemyBasicController : MonoBehaviour
         myTransform = transform;
 
         wanderCheckRate = Random.Range(.0005f, .005f);
-        headCheckRate = Random.Range(.0005f, .005f);
 
         rend = GetComponent<Renderer>();
         thisMat = GetComponent<Renderer>().material;
@@ -178,43 +185,49 @@ public class EnemyBasicController : MonoBehaviour
 
     void Update()
     {
-       
-        if (Time.time > wanderNextCheck)
-        {
-            CheckIfIShouldWander();
-            wanderNextCheck = Time.time + wanderCheckRate;
-        }
-        if (state == null) SwitchState(new States.Idle());
-        if (state != null) SwitchState(state.Update());
-
-        ManaRegen();
-        if (manaRegenTimer >= 0) manaRegenTimer -= Time.deltaTime;
-        if (healingSpellCooldown >= 0) healingSpellCooldown -= Time.deltaTime;
-        if (attackCooldown >= 0) attackCooldown -= Time.deltaTime;
-
-        CarryOutDetection();
-        headCheckRate = Random.Range(.8f, 1.2f);
-        if (headTransform == null) headTransform = myTransform;
-
-        if (isMeleeEnemy == true || isMeleeBoss == true)
-        {
-            if (myTarget != null) myNavMeshAgent.SetDestination(myTarget.position);
-        }
-
-        if (isStunned)
-        {
-            if (GetComponentInParent<NavMeshAgent>().speed != 0) saveSpeed = GetComponentInParent<NavMeshAgent>().speed;
-
-            GetComponentInParent<NavMeshAgent>().speed = 0;
-            siphonStunTimer -= Time.deltaTime;
-            if (siphonStunTimer <= 0)
+      
+            if (Time.time > wanderNextCheck)
             {
-                GetComponentInParent<NavMeshAgent>().speed = saveSpeed;
-                isStunned = false;
-                siphonStunTimer = 3f;
-
+                CheckIfIShouldWander();
+                wanderNextCheck = Time.time + wanderCheckRate;
             }
-        }
+            if (attackCooldown >= 0) attackCooldown -= Time.deltaTime;
+
+            if (state == null) SwitchState(new States.Idle());
+            if (state != null) SwitchState(state.Update());
+
+            CarryOutDetection();
+            TurnTowardTarget();
+            headCheckRate = Random.Range(.8f, 1.2f);
+            if (headTransform == null) headTransform = myTransform;
+
+            if (isMeleeEnemy == true || isMeleeBoss == true)
+            {
+                if (myTarget != null) myNavMeshAgent.SetDestination(myTarget.position);
+            }
+            if (isRangeEnemy == true || isRangeBoss == true)
+            {
+                if (myTarget != null) myNavMeshAgent.SetDestination(myTransform.position);
+            }
+
+
+            if (isStunned)
+            {
+                if (GetComponentInParent<NavMeshAgent>().speed != 0) saveSpeed = GetComponentInParent<NavMeshAgent>().speed;
+
+                GetComponentInParent<NavMeshAgent>().speed = 0;
+                siphonStunTimer -= Time.deltaTime;
+                if (siphonStunTimer <= 0)
+                {
+                    GetComponentInParent<NavMeshAgent>().speed = saveSpeed;
+                    isStunned = false;
+                    siphonStunTimer = 3f;
+
+                }
+            }
+        
+
+        if (lockedInPlace == true) myNavMeshAgent.speed = 0;
 
     }
 
@@ -237,7 +250,7 @@ public class EnemyBasicController : MonoBehaviour
             {
                 myNavMeshAgent.SetDestination(wanderTarget);
                 isOnRoute = true;
-                myNavMeshAgent.speed = 3.5f;
+                myNavMeshAgent.speed = 5f;
             }
         }
         else if (isOnRoute)
@@ -301,16 +314,16 @@ public class EnemyBasicController : MonoBehaviour
             headNextCheck = Time.time + headCheckRate;
 
             Collider[] colliders = Physics.OverlapSphere(myTransform.position, headDetectRaduis, playerLayer);
+            Collider[] colli = Physics.OverlapSphere(myTransform.position, meleeDetectRaduis, playerLayer);
 
+            //for line of sight on the player
             if (colliders.Length > 0)
             {
                 foreach (Collider potentialTargetCollider in colliders)
                 {
                     if (CanSeeTarget(potentialTargetCollider.transform))
                     {
-                        inRange = true;
-                        //myTarget = potentialTargetCollider.transform;
-                        
+
                         break;
                     }
                 }
@@ -318,38 +331,58 @@ public class EnemyBasicController : MonoBehaviour
             else
             {
                 enemySeen = false;
-                inRange = false;
                 myTarget = null;
                 
             }
-        }
-    }
-
-    //mana regeneration over time when the player/boss uses spells 
-    public void ManaRegen()
-    {
-        if (mana <= 9)
-        {
-            if (manaRegenTimer <= 0)
+            //when player is close to the enemy
+            if (colli.Length > 0)
             {
-                mana += 2f;
-                manaRegenTimer = .2f;
+                foreach (Collider potentialTargetCollider in colli)
+                {
+                    if (CanSeeTarget(potentialTargetCollider.transform))
+                    {
+                        inRange = true;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                inRange = false;
             }
         }
-        if (mana == 10) return;
     }
 
+    void TurnTowardTarget()
+    {
+        if (myTarget != null)
+        {
+            Vector3 disToTaget = myTarget.position - myTransform.position;
+            Quaternion targetRotation = Quaternion.LookRotation(disToTaget, Vector3.up);
+
+            Vector3 euler1 = myTransform.localEulerAngles;
+            Quaternion prevRot = myTransform.rotation;
+            myTransform.rotation = targetRotation;
+            Vector3 euler2 = transform.localEulerAngles;
+
+            if (lockEnemyRotationX) euler2.x = euler1.x;
+            if (lockEnemyRotationY) euler2.y = euler1.y;
+            if (lockEnemyRotationZ) euler2.z = euler1.z;
+
+            myTransform.rotation = prevRot;
+            myTransform.localRotation = AnimMath.Slide(transform.localRotation, Quaternion.Euler(euler2), 0);
+        }
+        else
+        {
+            myTransform.localRotation = AnimMath.Slide(myTransform.localRotation, startingRotation, .05f);
+        }
+    }
     //collision detection between the players bullets and the aoe
     public void OnTriggerEnter(Collider other)
     {
-        if (this.tag == ("Enemy") & other.tag == ("Bullet"))
-        {
-            TakeDamage(5);
-        }
-
         if (other.tag == "Wind")
         {
-            health--;
+            health -= 2.5f;
 
             GetComponent<Renderer>().materials = thoseMats;
             rend.materials = thoseMats;
@@ -396,7 +429,6 @@ public class EnemyBasicController : MonoBehaviour
             siphonStunTimer = 3f;
         }
     }
-
     void OnTriggerExit(Collider other)
     {
         if (other.tag == "Wind" || other.tag == "Bramble" || other.tag == "Siphon")
@@ -406,39 +438,18 @@ public class EnemyBasicController : MonoBehaviour
         }
     }
 
-     public void TakeDamage(int amt)
-        {
-            if (amt <= 0) return;
-            health -= amt;
-
-            if (health <= 0) Die();
-        }
-     public void Die()
-        {
-            print("DEAD");
-            Destroy(gameObject);
-
-        }
-
-     void SpawnProjectile()
+    void SpawnProjectile()
         {
             if (attackCooldown <= 0)
             {
 
-                if (mana >= 10)
                 {
-
-                    Projectile p = Instantiate(prefabProjectile, transform.position, Quaternion.identity);
-                    p.InitBullet(transform.forward * 20);
-
-                    mana -= 1;
-                    manaRegenTimer = 1f;
+                    Projectile p = Instantiate(prefabProjectile, myTransform.position, Quaternion.identity);
+                    p.InitBullet(myTransform.forward * tester);
                     attackCooldown = .75f;
                 }
             }
-            if (attackCooldown >= 0.1) return;
-            if (mana <= 0) return;
-
+            if (attackCooldown >= 0.001) return;
         }
 
     }

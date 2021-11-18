@@ -103,21 +103,22 @@ public class PlayerMovement : MonoBehaviour
         }
         bool isJumpHeld = Input.GetButton("Jump");
         bool onJumpPress = Input.GetButtonDown("Jump");
+        
 
-       //if (Input.GetKeyDown(KeyCode.LeftControl))
+        //if (Input.GetKeyDown(KeyCode.LeftControl))
         //{
-            
-         //   isCrouched = true;
-         //   cc.transform.localScale += -crounchScale;
-       
+
+        //   isCrouched = true;
+        //   cc.transform.localScale += -crounchScale;
+
         //}
-       //if (Input.GetKeyUp(KeyCode.LeftControl))
+        //if (Input.GetKeyUp(KeyCode.LeftControl))
         //{
-           
+
         //   isCrouched = false;
         //    cc.transform.localScale += crounchScale;
-       // }
-        
+        // }
+
 
         Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         targetDir.Normalize();

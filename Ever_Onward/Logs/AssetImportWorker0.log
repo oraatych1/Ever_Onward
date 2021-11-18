@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 8127 MB
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 16226 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,7 +11,7 @@ C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/lays3/Desktop/EVER_ONWARD/IDEK/Ever_Onward/Ever_Onward
+G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
@@ -23,11 +23,11 @@ Refreshing native plugins compatible for Editor in 79.04 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/lays3/Desktop/EVER_ONWARD/IDEK/Ever_Onward/Ever_Onward/Assets
+[Subsystems] Discovering subsystems at path G:/FSU DAGD Classes/[FSU] DAGD 498 - Seminar/Ever Onward/Ever_Onward/Ever_Onward/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Renderer: NVIDIA GeForce GTX 1060 (ID=0x1c20)
     Vendor:   
     VRAM:     2988 MB
     Driver:   30.0.14.7208
@@ -38,7 +38,6 @@ Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Mon
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56552
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Registered in 0.002991 seconds.
 Native extension for WindowsStandalone target not found
@@ -90,6 +89,9 @@ Received Import Request.
   artifactKey: Guid(302624980da46aa4eb294f0cab9d911c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Assest/Spells/Plant/LeafFULLLowRes.png using Guid(302624980da46aa4eb294f0cab9d911c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322fa6c5a98cf7b8bd9d99586984cc31') in 0.132109 seconds
   Import took 0.136185 seconds .
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1578.
+Total: 3.088800 ms (FindLiveObjects: 0.212700 ms CreateObjectMapping: 0.062200 ms MarkObjects: 2.764500 ms  DeleteObjects: 0.047800 ms)
 
 ========================================================================
 Received Prepare

@@ -15,11 +15,11 @@ C:/Users/Silver/Desktop/Ever_Onward/Ever_Onward
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49937
+53603
 Successfully changed project path to: C:/Users/Silver/Desktop/Ever_Onward/Ever_Onward
 C:/Users/Silver/Desktop/Ever_Onward/Ever_Onward
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 24.97 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 26.30 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path E:/Unity Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,73 +35,129 @@ Initialize mono
 Mono path[0] = 'E:/Unity Editor/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/Unity Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56340
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001138 seconds.
+Registered in 0.001126 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 25.07 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 27.44 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.892 seconds
+- Completed reload, in  0.973 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000871 seconds.
+Registered in 0.000820 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.765 seconds
+- Completed reload, in  0.794 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1128 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 59.6 MB.
 System memory in use after: 59.6 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1577.
-Total: 1.594300 ms (FindLiveObjects: 0.152900 ms CreateObjectMapping: 0.026300 ms MarkObjects: 1.359400 ms  DeleteObjects: 0.054300 ms)
+Total: 1.708100 ms (FindLiveObjects: 0.151900 ms CreateObjectMapping: 0.027500 ms MarkObjects: 1.465500 ms  DeleteObjects: 0.062000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Assets/Environment/Castle/Test Environment/New Material.mat
-  artifactKey: Guid(3d7111e84a59ba142a429719d7872b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Castle/Test Environment/New Material.mat using Guid(3d7111e84a59ba142a429719d7872b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa8dab83bbeaf8de4c6c8474324e14e') in 0.113708 seconds
-  Import took 0.115695 seconds .
+  path: Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke Sprite 2.png
+  artifactKey: Guid(8352f23568239de46a890d2bcf659201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke Sprite 2.png using Guid(8352f23568239de46a890d2bcf659201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab3279180d369eb37635ba1248668d24') in 0.105035 seconds
+  Import took 0.107200 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 35.896994 seconds.
-  path: Assets/Assets/Environment/Castle/Test Environment/Scene.fbx
-  artifactKey: Guid(5e069ee7b63bc424994dc561b3ddaecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Castle/Test Environment/Scene.fbx using Guid(5e069ee7b63bc424994dc561b3ddaecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1c4d17c438609cf3dcf3e2cffb91c7') in 0.409417 seconds
-  Import took 0.412201 seconds .
+  Time since last request: 7.101078 seconds.
+  path: Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke Sprite new.png
+  artifactKey: Guid(0162965379171264c88cf0c1a6010c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke Sprite new.png using Guid(0162965379171264c88cf0c1a6010c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8d44eb5fad7547e8c76913b63e367b') in 0.046886 seconds
+  Import took 0.049239 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.292228 seconds.
-  path: Assets/Assets/Environment/Castle/Test Environment/Scene.fbx
-  artifactKey: Guid(5e069ee7b63bc424994dc561b3ddaecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Castle/Test Environment/Scene.fbx using Guid(5e069ee7b63bc424994dc561b3ddaecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a21b6ea77c4812065552a413d2953b39') in 0.359228 seconds
-  Import took 0.361958 seconds .
+  Time since last request: 704.037302 seconds.
+  path: Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke Tranparent.png
+  artifactKey: Guid(d7ddde6f2ea92144a97dc9c00ce4867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke Tranparent.png using Guid(d7ddde6f2ea92144a97dc9c00ce4867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a05d7fd3693a1d97331833deb3ee11') in 0.031928 seconds
+  Import took 0.034122 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1046.957963 seconds.
-  path: Assets/Assets/Environment/Castle/Test Environment/Testing Material.mat
-  artifactKey: Guid(3d7111e84a59ba142a429719d7872b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Castle/Test Environment/Testing Material.mat using Guid(3d7111e84a59ba142a429719d7872b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b191a7565da4c73a5a16eabea6b8974d') in 0.021282 seconds
-  Import took 0.023794 seconds .
+  Time since last request: 0.000918 seconds.
+  path: Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke Tranparent.png
+  artifactKey: Guid(d7ddde6f2ea92144a97dc9c00ce4867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke Tranparent.png using Guid(d7ddde6f2ea92144a97dc9c00ce4867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a05d7fd3693a1d97331833deb3ee11') in 0.015598 seconds
+  Import took 0.017764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.722966 seconds.
+  path: Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke Tranparent.png
+  artifactKey: Guid(d7ddde6f2ea92144a97dc9c00ce4867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke Tranparent.png using Guid(d7ddde6f2ea92144a97dc9c00ce4867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c3e264a2c868f06b7751cf3053da76c') in 0.029621 seconds
+  Import took 0.031890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.544677 seconds.
+  path: Assets/Assets/VFX/Volumetric Fog (Movable)/New Material.mat
+  artifactKey: Guid(ecf8021e6473ae94aaa2cc75add19b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/VFX/Volumetric Fog (Movable)/New Material.mat using Guid(ecf8021e6473ae94aaa2cc75add19b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db95ef25f35a8884d0123421f6773f93') in 0.050928 seconds
+  Import took 0.053159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 142.663500 seconds.
+  path: Assets/Assets/VFX/Volumetric Fog (Movable)/Volumetric Fog.prefab
+  artifactKey: Guid(83ffa9b525c2ead44a4d5dadbacd8697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/VFX/Volumetric Fog (Movable)/Volumetric Fog.prefab using Guid(83ffa9b525c2ead44a4d5dadbacd8697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3338ecb43e52bac6c44d2e106123fd1') in 0.019084 seconds
+  Import took 0.021261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.613902 seconds.
+  path: Assets/Assets/VFX/Volumetric Fog (Movable)/Volumetric Fog.prefab
+  artifactKey: Guid(83ffa9b525c2ead44a4d5dadbacd8697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/VFX/Volumetric Fog (Movable)/Volumetric Fog.prefab using Guid(83ffa9b525c2ead44a4d5dadbacd8697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85037f859ab8af4c8962b80099accdaf') in 0.004550 seconds
+  Import took 0.006650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.780107 seconds.
+  path: Assets/Assets/VFX/Volumetric Fog (Movable)/Volumetric Fog.prefab
+  artifactKey: Guid(83ffa9b525c2ead44a4d5dadbacd8697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/VFX/Volumetric Fog (Movable)/Volumetric Fog.prefab using Guid(83ffa9b525c2ead44a4d5dadbacd8697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9115fb7af2e3ca7f41b90a58086c0f4b') in 0.004831 seconds
+  Import took 0.007367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 387.538192 seconds.
+  path: Assets/Assets/VFX/Volumetric Fog (Movable)/Volumetric Fog.prefab
+  artifactKey: Guid(83ffa9b525c2ead44a4d5dadbacd8697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/VFX/Volumetric Fog (Movable)/Volumetric Fog.prefab using Guid(83ffa9b525c2ead44a4d5dadbacd8697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6190de67deee95dfda2e5a285de060') in 0.004622 seconds
+  Import took 0.006941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.579450 seconds.
+  path: Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke 1.mat
+  artifactKey: Guid(ecf8021e6473ae94aaa2cc75add19b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/VFX/Volumetric Fog (Movable)/Smoke 1.mat using Guid(ecf8021e6473ae94aaa2cc75add19b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee4b169839dd89a9dad074b6fb4f7960') in 0.030715 seconds
+  Import took 0.032944 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

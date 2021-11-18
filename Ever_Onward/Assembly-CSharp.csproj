@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Dialogue System\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\enemyNavPause.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\enemyChase.cs" />
+    <Compile Include="Assets\Scripts\AnimMath.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\enemyDetection.cs" />
     <Compile Include="Assets\Scripts\InteractiveItem.cs" />
     <Compile Include="Assets\Scripts\Spells\Projectile.cs" />
@@ -83,14 +84,13 @@
     <Compile Include="Assets\Scripts\Enemy Scripts\AIDamage.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\enemyCharge.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\enemyNavPursue.cs" />
+    <Compile Include="Assets\Scripts\plantDetector.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Knockback.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\enemySprite.cs" />
     <Compile Include="Assets\Scripts\Destroy.cs" />
     <Compile Include="Assets\Scripts\CameraHandler.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\AIShoot.cs" />
-    <Compile Include="Assets\Scripts\AnimMath.cs" />
-    <Compile Include="Assets\Scripts\plantDetector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

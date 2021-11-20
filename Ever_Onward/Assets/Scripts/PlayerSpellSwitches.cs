@@ -11,6 +11,7 @@ public class PlayerSpellSwitches : MonoBehaviour
     public Projectile GrassProjectile;
     public AOE LightAOE, BrambleAOE, SiphonAOE;
     private CharacterController player;
+    GameObject spawnPoint;
     //public DialogueSystem dialogue;
    
     public enum SpellState
@@ -99,16 +100,15 @@ public class PlayerSpellSwitches : MonoBehaviour
                 //behavoir
                 if(spell.grassPressed)
                 {
-                    print("GRASS SPELL");
-                    if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0) 
-                        spell.SpawnGrassProjectile();
-                        HealthAndManaSystem.mana--;
+                    
                     if (Input.GetButtonDown("Fire1") && !DialogueSystem.inConversation && HealthAndManaSystem.mana > 0)
                     {
-                        //print("GRASS SPELL");
-                        HealthAndManaSystem.manaRegenTimer = 3f;
-                        // if (Input.GetButtonDown("Fire1")) spell.SpawnWindProjectile();
+                        print("GRASS SPELL");
+                        spell.SpawnGrassProjectile();
+                        HealthAndManaSystem.mana--;
+                        //HealthAndManaSystem.manaRegenTimer = 3f;
                     }
+
                 }
                 
 
@@ -264,6 +264,7 @@ public class PlayerSpellSwitches : MonoBehaviour
     void Start()
     {
         player = GetComponent<CharacterController>();
+        spawnPoint = GameObject.Find("spawnpoint");
     }
 
     // Update is called once per frame
@@ -398,8 +399,7 @@ public class PlayerSpellSwitches : MonoBehaviour
     {
         if (windCooldown > 0) return;
 
-        Projectile p = Instantiate(WindProjectile, 
-        new Vector3(transform.position.x + 0.5f, transform.position.y + 1, transform.position.z), Quaternion.identity);
+        Projectile p = Instantiate(WindProjectile, spawnPoint.transform.position, Camera.main.transform.rotation);
         p.InitBullet(Camera.main.transform.forward * 20);
 
     }
@@ -408,8 +408,8 @@ public class PlayerSpellSwitches : MonoBehaviour
     {
         if (grassCooldown > 0) return;
 
-        Projectile p = Instantiate(GrassProjectile, transform.position, Quaternion.identity);
-        p.InitBullet(transform.forward * 20);
+        Projectile p = Instantiate(GrassProjectile, spawnPoint.transform.position, Camera.main.transform.rotation);
+        p.InitBullet(Camera.main.transform.forward * 20);
 
 
     }

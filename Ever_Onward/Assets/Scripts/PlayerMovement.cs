@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController cc;
     public Animator springAnimator;
     public float mouseSensitivity = 3.5f;
-    public float walkSpeed = 15.0f;
+    public float walkSpeed = 25.0f;
     public float gravity = -13.0f;
     [SerializeField]  [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
@@ -105,19 +105,18 @@ public class PlayerMovement : MonoBehaviour
         bool onJumpPress = Input.GetButtonDown("Jump");
         
 
-        //if (Input.GetKeyDown(KeyCode.LeftControl))
-        //{
+        if (Input.GetKeyDown(KeyCode.LeftShift) && controller.isGrounded)
+        {
 
-        //   isCrouched = true;
-        //   cc.transform.localScale += -crounchScale;
+            walkSpeed = 25.0f;
 
-        //}
-        //if (Input.GetKeyUp(KeyCode.LeftControl))
-        //{
+        }
+        if (!Input.GetKey(KeyCode.LeftShift) && controller.isGrounded)
+        {
 
-        //   isCrouched = false;
-        //    cc.transform.localScale += crounchScale;
-        // }
+            walkSpeed = 20.0f;
+            
+        }
 
 
         Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));

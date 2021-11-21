@@ -25,14 +25,26 @@ public class HealthAndManaSystem : MonoBehaviour
     public Sprite manaFull;
     public Sprite manaHalf;
     public Sprite manaEmpty;
+    public Vector3 respawnPosition1;
+    GameObject respawnPoint;
+
 
     private void Start()
     {
         health = healthMax;
         mana = manaMax;
+        respawnPoint = GameObject.Find("RespawnPoint1");
+        respawnPosition1 = transform.position;
     }
     public void Update()
     {
+        if (transform.position.y <= -250)
+        {
+            //print("work fcker");
+            //print("heres yer position " + transform.position.ToString());
+            //print("respawn here " + respawnPosition1);
+            transform.position = respawnPosition1;
+        }
         //print(mana);
         ManaRegen();
         if (manaRegenTimer >= 0) manaRegenTimer -= Time.deltaTime;
@@ -95,6 +107,16 @@ public class HealthAndManaSystem : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        print ("Colliding");
+        if(other.tag == "RespawnPlane")
+        {
+            print("Colliding Bottom");
+            
+        }
     }
 
 }

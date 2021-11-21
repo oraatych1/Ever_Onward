@@ -6,12 +6,15 @@ public class plantDetector : MonoBehaviour
 {
     // Start is called before the first frame update
 
-
+    Animator anim;
     Renderer rend;
+    Collider m_Collider;
 
     void Start()
     {
-        rend = GetComponent<Renderer>(); 
+        anim = GetComponent<Animator>();
+        //rend = GetComponent<Renderer>();
+        m_Collider = GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -19,7 +22,22 @@ public class plantDetector : MonoBehaviour
     {
         if(other.tag == "Grass")
         {
-            rend.material.color = Color.red;
+            anim.SetBool("isWilted", false);
+            //rend.material.color = Color.red;
+            Invoke("SetAddCollision", 2f);
+            Invoke("DisableCollision", 15f);
         }
+    }
+
+    void SetAddCollision()
+    {
+        m_Collider.enabled = true;
+    }
+
+    void DisableCollision()
+    {
+        anim.SetBool("isWilted", true);
+        //rend.material.color = Color.gray;
+        m_Collider.enabled = false;
     }
 }

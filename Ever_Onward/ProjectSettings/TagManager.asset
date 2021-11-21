@@ -11,11 +11,12 @@ TagManager:
   - Siphon
   - Bramble
   - EnemyBullet
+  - RespawnPlane
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PostProcessing
   - Water
   - UI
   - 

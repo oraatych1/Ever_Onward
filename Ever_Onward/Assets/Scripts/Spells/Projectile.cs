@@ -30,7 +30,7 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
 
-        transform.position += velocity * Time.deltaTime;
+        transform.position += velocity * 3 * Time.deltaTime;
 
         //if()
     }

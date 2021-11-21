@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController cc;
     public Animator springAnimator;
     public float mouseSensitivity = 3.5f;
-    public float walkSpeed = 25.0f;
+    public float walkSpeed = 24.0f;
     public float gravity = -13.0f;
     [SerializeField]  [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
@@ -108,13 +108,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && controller.isGrounded)
         {
 
-            walkSpeed = 25.0f;
+            walkSpeed = 30.0f;
 
         }
         if (!Input.GetKey(KeyCode.LeftShift) && controller.isGrounded)
         {
 
-            walkSpeed = 20.0f;
+            walkSpeed = 24.0f;
             
         }
 

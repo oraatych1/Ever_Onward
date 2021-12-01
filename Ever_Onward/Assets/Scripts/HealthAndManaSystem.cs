@@ -111,7 +111,7 @@ public class HealthAndManaSystem : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        print ("Colliding");
+        //print ("Colliding");
         if(other.tag == "RespawnPlane")
         {
             print("Colliding Bottom");

@@ -46,12 +46,12 @@ public class EnemyBasicController : MonoBehaviour
                 //Behaviour
                 if (enemy.isRangeEnemy == true || enemy.isRangeBoss == true)
                 {
-                    enemy.SpawnProjectile();
+                    enemy.SpawnProjectile(.75f);
                 }
                 //enemy.myNavMeshAgent.speed = 2.5f;
 
                 //transition
-                //if (enemy.health <= 5) return new States.Attack3();
+                if (enemy.health <= 5) return new States.Attack3();
                 if (!enemy.enemySeen) return new States.Idle();
                 if (enemy.inRange) return new States.MeleeAttack();
 
@@ -65,33 +65,32 @@ public class EnemyBasicController : MonoBehaviour
 
                 public override State Update()
                 {
-                    //Behaviour
-                    
-                    // enemy.myNavMeshAgent.speed = 6f;
+                //Behaviour
+                if (enemy.isRangeEnemy == true || enemy.isRangeBoss == true)
+                {
+                    enemy.SpawnProjectile(.5f);
+                }
+                
+                if (!enemy.enemySeen) return new States.Idle();
+                if (!enemy.inRange) return new States.Idle();
 
-                    //enemy.inRange = false;
-                    //transition
-                    //if (enemy.healthSystem <= 50) return new States.Attack3();
-                    if (!enemy.enemySeen) return new States.Idle();
-
-                    return null;
+                return null;
                 }
 
             }
-        /*
+        
             public class Attack3 : State
             {
                 public override State Update()
                 {
-                    enemy.SpawnHealthEffect();
 
-                    //enemy.myNavMeshAgent.speed = 6;
+
 
                     if (enemy.healthSystem >= 75) return new States.Idle();
                     return null;
                 }
             }
-        */
+        
     }
 
 
@@ -164,6 +163,9 @@ public class EnemyBasicController : MonoBehaviour
     public bool isMeleeBoss = false;
     public bool isRangeBoss = false;
 
+    public float alert = 20;
+    Vector3 danger;
+
 
     // Start is called before the first frame update
     void Start()
@@ -201,17 +203,39 @@ public class EnemyBasicController : MonoBehaviour
             headCheckRate = Random.Range(.8f, 1.2f);
             if (headTransform == null) headTransform = myTransform;
 
-            if (isMeleeEnemy == true || isMeleeBoss == true)
+        if (isMeleeEnemy == true || isMeleeBoss == true)
+        {
+            if (myTarget != null && isMeleeEnemy)
             {
-                if (myTarget != null) myNavMeshAgent.SetDestination(myTarget.position);
+                GetComponentInParent<NavMeshAgent>().speed = 19f;
+                myNavMeshAgent.SetDestination(myTarget.position);
             }
+
+            if (myTarget != null && isMeleeBoss)
+            {
+                GetComponentInParent<NavMeshAgent>().speed = 10f;
+                myNavMeshAgent.SetDestination(myTarget.position);
+            }
+        }
             if (isRangeEnemy == true || isRangeBoss == true)
             {
                 if (myTarget != null) myNavMeshAgent.SetDestination(myTransform.position);
             }
 
+            if (isRangeEnemy == true && inRange == true|| isRangeBoss == true && inRange == true)
+            {
+            print("DANGER");
+            print(danger);
+                Vector3 randomPoint = myTransform.position + Random.insideUnitSphere * alert;
+                if (NavMesh.SamplePosition(randomPoint, out navHit, 1.0f, NavMesh.AllAreas))
+                {
+                    danger = navHit.position;
+                }
+            GetComponentInParent<NavMeshAgent>().speed = 23f;
+            if (myTarget != null) myNavMeshAgent.SetDestination(danger);
+            }
 
-            if (isStunned)
+        if (isStunned)
             {
                 if (GetComponentInParent<NavMeshAgent>().speed != 0) saveSpeed = GetComponentInParent<NavMeshAgent>().speed;
 
@@ -226,7 +250,6 @@ public class EnemyBasicController : MonoBehaviour
                 }
             }
         
-
         if (lockedInPlace == true) myNavMeshAgent.speed = 0;
 
     }
@@ -438,17 +461,19 @@ public class EnemyBasicController : MonoBehaviour
         }
     }
 
-    void SpawnProjectile()
+    void SpawnProjectile(float speed)
         {
             if (attackCooldown <= 0)
             {
 
                 {
-                    Projectile p = Instantiate(prefabProjectile, myTransform.position, Quaternion.identity);
+                    Projectile p = Instantiate(prefabProjectile, myTransform.position, myTransform.rotation);
                     p.InitBullet(myTransform.forward * tester);
-                    attackCooldown = .75f;
+                    attackCooldown = speed;
                 }
             }
+
+
             if (attackCooldown >= 0.001) return;
         }
 

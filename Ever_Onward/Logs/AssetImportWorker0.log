@@ -15,11 +15,11 @@ C:/Users/lays3/Desktop/EVER_ONWARD/IDEK/Ever_Onward/Ever_Onward
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55773
+64419
 Successfully changed project path to: C:/Users/lays3/Desktop/EVER_ONWARD/IDEK/Ever_Onward/Ever_Onward
 C:/Users/lays3/Desktop/EVER_ONWARD/IDEK/Ever_Onward/Ever_Onward
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 43.63 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 89.86 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,52 +35,1047 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56780
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56612
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003024 seconds.
+Registered in 0.003592 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 37.18 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 47.76 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.527 seconds
+- Completed reload, in  1.892 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000942 seconds.
+Registered in 0.001313 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.088 seconds
+- Completed reload, in  1.552 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1250 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.0 MB.
+System memory in use before: 142.1 MB.
 System memory in use after: 142.1 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1701.
-Total: 2.673000 ms (FindLiveObjects: 0.677200 ms CreateObjectMapping: 0.079700 ms MarkObjects: 1.851000 ms  DeleteObjects: 0.063500 ms)
+Total: 2.326500 ms (FindLiveObjects: 0.160600 ms CreateObjectMapping: 0.047600 ms MarkObjects: 2.055000 ms  DeleteObjects: 0.061900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Forest.unity
-  artifactKey: Guid(1196f51e0f64df649ae25590e24a587d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Forest.unity using Guid(1196f51e0f64df649ae25590e24a587d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50fd63967f7a8b67864e01c78f59d8d7') in 0.044714 seconds
-  Import took 0.047539 seconds .
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword impact (2).fbx
+  artifactKey: Guid(09529801d81d2e048ac345124ff3534b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword impact (2).fbx using Guid(09529801d81d2e048ac345124ff3534b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3185076d0bdc9340f1ef6c00aa852632') in 0.977301 seconds
+  Import took 0.987256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000990 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slash (5).fbx
+  artifactKey: Guid(3f6cdf1eb86c6dc47a031905e9dbdc88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slash (5).fbx using Guid(3f6cdf1eb86c6dc47a031905e9dbdc88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce46c11e2048cda111fa6883d8b3739') in 0.083907 seconds
+  Import took 0.088333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword jump (2).fbx
+  artifactKey: Guid(5eb2706a531bb6d4b9063d30a6738775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword jump (2).fbx using Guid(5eb2706a531bb6d4b9063d30a6738775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13145b9fb397d2325d4b2f64c567374f') in 0.074360 seconds
+  Import took 0.079168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/draw a great sword 1.fbx
+  artifactKey: Guid(3e8aa2dbf1b41d546b54d2b4a0a78106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/draw a great sword 1.fbx using Guid(3e8aa2dbf1b41d546b54d2b4a0a78106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc77543dacfe312b343e8411107bbf78') in 0.124144 seconds
+  Import took 0.127954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword casting.fbx
+  artifactKey: Guid(d71b230845336a54a9ecc0ea98f625b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword casting.fbx using Guid(d71b230845336a54a9ecc0ea98f625b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23730b9a4abdc71ddd3e3e3554c486e2') in 0.060341 seconds
+  Import took 0.063650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slash (4).fbx
+  artifactKey: Guid(1978b7c8596cff248a62add24f710a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slash (4).fbx using Guid(1978b7c8596cff248a62add24f710a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc969d4c43da27e8a7a61128cba1edb4') in 0.068473 seconds
+  Import took 0.072684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword idle (5).fbx
+  artifactKey: Guid(05c1993810b81e945b9d39f7cb91a629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword idle (5).fbx using Guid(05c1993810b81e945b9d39f7cb91a629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd9fbe4bf418c8257a6a28f8f00a372') in 0.050069 seconds
+  Import took 0.054419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword strafe (4).fbx
+  artifactKey: Guid(6e85fc3d097ccbd4c8c90e97f62adb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword strafe (4).fbx using Guid(6e85fc3d097ccbd4c8c90e97f62adb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8018837323964bce8d4c70ee65c1b6') in 0.099533 seconds
+  Import took 0.107795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword power up.fbx
+  artifactKey: Guid(84f858991eea2594ab1c0cf08a77c22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword power up.fbx using Guid(84f858991eea2594ab1c0cf08a77c22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35dc3518707a7c9fa9236f20e871fbd1') in 0.112833 seconds
+  Import took 0.117536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword idle (2).fbx
+  artifactKey: Guid(8dd34af8704170a4085178ec2387a3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword idle (2).fbx using Guid(8dd34af8704170a4085178ec2387a3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a673a37c0b3c5e7f94c49f1b56ba2d9') in 0.073978 seconds
+  Import took 0.079535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword kick (2).fbx
+  artifactKey: Guid(8ecd7f4485374fa4ab93115434e44d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword kick (2).fbx using Guid(8ecd7f4485374fa4ab93115434e44d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645401c65d4b5ec3989ae728d4c1cf73') in 0.064616 seconds
+  Import took 0.071463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/spell cast.fbx
+  artifactKey: Guid(30e219f972873a247be4db9c81b0b388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/spell cast.fbx using Guid(30e219f972873a247be4db9c81b0b388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1556bd86b73ab31bb9696d9d1746708e') in 0.055536 seconds
+  Import took 0.059228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword kick.fbx
+  artifactKey: Guid(90bf123a1a6516341b029cea70028baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword kick.fbx using Guid(90bf123a1a6516341b029cea70028baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8d3341461270d1ef02740ec028b76d9') in 0.175814 seconds
+  Import took 0.185780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slide attack.fbx
+  artifactKey: Guid(e2a7f5b455e5d8948a6126155edde58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slide attack.fbx using Guid(e2a7f5b455e5d8948a6126155edde58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a04c11491a1618ff19ad9d60ca8e2c') in 0.127346 seconds
+  Import took 0.132066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy
+  artifactKey: Guid(6766d4c5bc2a99642b879aaf6f296351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy using Guid(6766d4c5bc2a99642b879aaf6f296351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb776f61c28b1401fd255452059f05d') in 0.033227 seconds
+  Import took 0.041789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword blocking (2).fbx
+  artifactKey: Guid(6be54d1956787314e94175f10476b846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword blocking (2).fbx using Guid(6be54d1956787314e94175f10476b846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b695c1774696a20db0eca2b688e2196') in 0.077034 seconds
+  Import took 0.080627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/two handed sword death.fbx
+  artifactKey: Guid(ffece2a4eda3bae4a8aa4e369ec6824b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/two handed sword death.fbx using Guid(ffece2a4eda3bae4a8aa4e369ec6824b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a89dec3608bb4237e1122c88ba10c6') in 0.056248 seconds
+  Import took 0.063597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword impact (5).fbx
+  artifactKey: Guid(362e4402f35925d409de2262e6bb41f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword impact (5).fbx using Guid(362e4402f35925d409de2262e6bb41f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43aecb25d414a713dfd54576ed10a1fc') in 0.060566 seconds
+  Import took 0.065161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000727 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching (6).fbx
+  artifactKey: Guid(bde63aac3f1e9bf47b5501d3ebafc93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching (6).fbx using Guid(bde63aac3f1e9bf47b5501d3ebafc93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c404a2fa8424558f7ddda57fad31e1') in 0.055816 seconds
+  Import took 0.066757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword attack.fbx
+  artifactKey: Guid(8ff6b96e1daf85d4f9dfb24125668b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword attack.fbx using Guid(8ff6b96e1daf85d4f9dfb24125668b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0533c0d6ab729fa158da19ca0b8f9e') in 0.238723 seconds
+  Import took 0.246566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000938 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword blocking (3).fbx
+  artifactKey: Guid(460227095352f3e47b188a769ae075d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword blocking (3).fbx using Guid(460227095352f3e47b188a769ae075d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e276540833199692dea787df3a95929e') in 0.428882 seconds
+  Import took 0.435657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching (4).fbx
+  artifactKey: Guid(a39985ff8eb52ac4faf03678f78c3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching (4).fbx using Guid(a39985ff8eb52ac4faf03678f78c3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1a1e390bad6d374d3ea0d4d495da27') in 0.265550 seconds
+  Import took 0.278908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001069 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword 180 turn.fbx
+  artifactKey: Guid(a56851b954f49ba4da301a009808e01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword 180 turn.fbx using Guid(a56851b954f49ba4da301a009808e01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6075d0a3432f7c6cf3c231cb68c709ed') in 0.139953 seconds
+  Import took 0.226411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword impact (3).fbx
+  artifactKey: Guid(1968850a245675b4a9d914bb73435553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword impact (3).fbx using Guid(1968850a245675b4a9d914bb73435553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e74f30ed86b2d32ab35aed24b7c09a') in 0.071735 seconds
+  Import took 0.075056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword jump.fbx
+  artifactKey: Guid(b73f483d08e8a914faf7b86569182fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword jump.fbx using Guid(b73f483d08e8a914faf7b86569182fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7de5e588bd9f26e5faeffa610407d29') in 0.110776 seconds
+  Import took 0.115637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000535 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slash.fbx
+  artifactKey: Guid(ac9be456ffdd4d144ada2f9c6b7eb2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slash.fbx using Guid(ac9be456ffdd4d144ada2f9c6b7eb2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac5ee97ca372010f75d7adc8d803a4f') in 0.156915 seconds
+  Import took 0.160644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword strafe (2).fbx
+  artifactKey: Guid(8dfd04c605b8c11428be38cc4cdf150a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword strafe (2).fbx using Guid(8dfd04c605b8c11428be38cc4cdf150a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba40ccd0d784bf94f3a6907bafd63eb') in 0.045606 seconds
+  Import took 0.051113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching (5).fbx
+  artifactKey: Guid(ab03a996de3c09145822ac7ce2b9e3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching (5).fbx using Guid(ab03a996de3c09145822ac7ce2b9e3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8680b19705f4eae65d211ba5e7fa2ae') in 0.067636 seconds
+  Import took 0.070480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching (2).fbx
+  artifactKey: Guid(136999149d2504148b4b819e74d78a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching (2).fbx using Guid(136999149d2504148b4b819e74d78a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08a2da7fb353272a265ba1b46fad4ddf') in 0.050493 seconds
+  Import took 0.054022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/two handed sword death (2).fbx
+  artifactKey: Guid(70985a47d51e87c4fa1ee59466af1c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/two handed sword death (2).fbx using Guid(70985a47d51e87c4fa1ee59466af1c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4b1553fa0807d6258a7153ee3d81ad') in 0.056338 seconds
+  Import took 0.059312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword idle (4).fbx
+  artifactKey: Guid(a0e7d44c5bc64724981709e998153b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword idle (4).fbx using Guid(a0e7d44c5bc64724981709e998153b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a77aeabb027e758f78a86fc1954b4fb2') in 0.063669 seconds
+  Import took 0.067108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword strafe (3).fbx
+  artifactKey: Guid(8ae88572a5a014f43b1403e19b46a12e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword strafe (3).fbx using Guid(8ae88572a5a014f43b1403e19b46a12e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dea773b0e9ee163821c0e797680deaf') in 0.046505 seconds
+  Import took 0.049753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword turn (2).fbx
+  artifactKey: Guid(ee9369759071cc2448da7271f38bba65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword turn (2).fbx using Guid(ee9369759071cc2448da7271f38bba65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60939f27cc3800405f99201d539eac52') in 0.053160 seconds
+  Import took 0.056225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slash (3).fbx
+  artifactKey: Guid(33d4f7ed4f1561f46ba28a58ff7186dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slash (3).fbx using Guid(33d4f7ed4f1561f46ba28a58ff7186dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3675e3a5e1bda6b66a272893d3a513f') in 0.058431 seconds
+  Import took 0.061495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching.fbx
+  artifactKey: Guid(3e640ff1f7163e44297e0b45651fb056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching.fbx using Guid(3e640ff1f7163e44297e0b45651fb056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128028aaed54707354ab8696d5a630fa') in 0.091498 seconds
+  Import took 0.094767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching (3).fbx
+  artifactKey: Guid(9f0dc0c429e755646974c6ce5034fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword crouching (3).fbx using Guid(9f0dc0c429e755646974c6ce5034fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68dc577a14c47cb32c864d823731cdfa') in 0.063966 seconds
+  Import took 0.066937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword blocking.fbx
+  artifactKey: Guid(fbe826b6c90274442862f5dc08cc1466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword blocking.fbx using Guid(fbe826b6c90274442862f5dc08cc1466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eecb24b3e762c7caa35e77096aaa35c') in 0.095465 seconds
+  Import took 0.100180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword 180 turn (2).fbx
+  artifactKey: Guid(0dbdc3cf831460748a0cd9ace1bd0cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword 180 turn (2).fbx using Guid(0dbdc3cf831460748a0cd9ace1bd0cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658fdb59ffadbbd0dcd0b6ed11419b2d') in 0.086411 seconds
+  Import took 0.089437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations
+  artifactKey: Guid(cdcc741d143d355468c43ee68190d088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations using Guid(cdcc741d143d355468c43ee68190d088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa276950f495df79287387a38b49d0c3') in 0.051115 seconds
+  Import took 0.054010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword run.fbx
+  artifactKey: Guid(f6f1b2cf2170f344a82ce94981f9c3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword run.fbx using Guid(f6f1b2cf2170f344a82ce94981f9c3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef44ac3d2d55d81a4b5b7a5bc1ccc9c') in 0.232267 seconds
+  Import took 0.236118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword jump attack.fbx
+  artifactKey: Guid(b3ec56cbeae3942439f38384ddcd1ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword jump attack.fbx using Guid(b3ec56cbeae3942439f38384ddcd1ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ad8626360481668220921999ea65ad') in 0.089573 seconds
+  Import took 0.093773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword impact.fbx
+  artifactKey: Guid(c102d7a82e8f54a4eb9ed52cea12b649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword impact.fbx using Guid(c102d7a82e8f54a4eb9ed52cea12b649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46f14d73609eec5afc3b140306b2790') in 0.064433 seconds
+  Import took 0.068013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword walk.fbx
+  artifactKey: Guid(d266b494dfc814f4f958dffcd3bd0a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword walk.fbx using Guid(d266b494dfc814f4f958dffcd3bd0a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8289b973af67cf2ba25b77896bad6091') in 0.481055 seconds
+  Import took 0.484851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword walk (2).fbx
+  artifactKey: Guid(227ff40bb1d63c842beba08d00e11c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword walk (2).fbx using Guid(227ff40bb1d63c842beba08d00e11c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145c542dd8920488f0c2cfbd46c4df3b') in 0.061009 seconds
+  Import took 0.072452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword idle (3).fbx
+  artifactKey: Guid(12e0f6302d2681344b2aa48d01f8a1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword idle (3).fbx using Guid(12e0f6302d2681344b2aa48d01f8a1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992990a67f26087a1c50629fdd076c04') in 0.090360 seconds
+  Import took 0.096335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword high spin attack.fbx
+  artifactKey: Guid(41190e2d3ac6bd649a103f8da16b6fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword high spin attack.fbx using Guid(41190e2d3ac6bd649a103f8da16b6fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f22a6a691ca4eac7fadc6a600e7c020') in 0.114036 seconds
+  Import took 0.117865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword turn.fbx
+  artifactKey: Guid(07646d4cbd8b54d4ebc6f9d755a954f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword turn.fbx using Guid(07646d4cbd8b54d4ebc6f9d755a954f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a79a4364fb990d36ce4662683c8aae') in 0.155087 seconds
+  Import took 0.165485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword impact (4).fbx
+  artifactKey: Guid(6a192bc5e1ed6f14ab86884578c419ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword impact (4).fbx using Guid(6a192bc5e1ed6f14ab86884578c419ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '519a0d572a7f60ec70143a200ac4db1c') in 0.091968 seconds
+  Import took 0.094817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slash (2).fbx
+  artifactKey: Guid(8038d305497692a48a3228f609cb9fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword slash (2).fbx using Guid(8038d305497692a48a3228f609cb9fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3976a1408e5714b518cf2b4483a9e575') in 0.085071 seconds
+  Import took 0.088061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword run (2).fbx
+  artifactKey: Guid(884ccf73d09b1314d9bddd945b61ee8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword run (2).fbx using Guid(884ccf73d09b1314d9bddd945b61ee8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3cd111cb0ebeb2e0d2c34bed4894879') in 0.049196 seconds
+  Import took 0.053190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx
+  artifactKey: Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx using Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ee8a15b6197ab4b602ac162b070ff2') in 0.782896 seconds
+  Import took 0.786397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword idle.fbx
+  artifactKey: Guid(3d8e0e63abcc16343883a46a49481587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword idle.fbx using Guid(3d8e0e63abcc16343883a46a49481587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cd3c1db2da941e9a31d3ecaea32aade') in 0.100878 seconds
+  Import took 0.103710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/draw a great sword 2.fbx
+  artifactKey: Guid(8bf2513633b627a47868dd9761d3f83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/draw a great sword 2.fbx using Guid(8bf2513633b627a47868dd9761d3f83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddef1922931ad7fafa15db2e4ee4107b') in 0.062513 seconds
+  Import took 0.065736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword strafe.fbx
+  artifactKey: Guid(852026e2de4b13a4bb1e140c51666ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword strafe.fbx using Guid(852026e2de4b13a4bb1e140c51666ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '672ac0202069bf136937aa369a9ce802') in 0.092313 seconds
+  Import took 0.096329 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 76.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.4 MB.
+System memory in use after: 132.5 MB.
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1745.
+Total: 12.680600 ms (FindLiveObjects: 0.606600 ms CreateObjectMapping: 0.064100 ms MarkObjects: 11.865900 ms  DeleteObjects: 0.140900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 216.972179 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx
+  artifactKey: Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx using Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27c184c5d1fdb0d10a758ef46895330') in 0.838059 seconds
+  Import took 0.853246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.285061 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx
+  artifactKey: Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx using Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e379e7a15e262b2de72835f5a152356') in 0.071535 seconds
+  Import took 0.075734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.294926 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx
+  artifactKey: Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx using Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fdc7386a3d9e94dca97c09876aaa62a') in 0.057239 seconds
+  Import took 0.060990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.597750 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx
+  artifactKey: Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx using Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ef7aae778b2fbef4ff504b75a82e1f') in 0.089331 seconds
+  Import took 0.097118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.407526 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx
+  artifactKey: Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx using Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27b0808ab94cf9d94cf2a54d8ed7af12') in 0.053634 seconds
+  Import took 0.059865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.994599 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx
+  artifactKey: Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/Winter.fbx using Guid(6ae65202d95696546869e5d59bd23fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162a62cfabfd3c5c79308ef4c1c6bdce') in 0.055138 seconds
+  Import took 0.058021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.644538 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures
+  artifactKey: Guid(4cfde1a6e38c2db439a52e20e2c89fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures using Guid(4cfde1a6e38c2db439a52e20e2c89fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986e3d1125852e4de26b46a2579c98b4') in 0.029774 seconds
+  Import took 0.032632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.199250 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss
+  artifactKey: Guid(e780d65be3b4bb74594deb828b6e56cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss using Guid(e780d65be3b4bb74594deb828b6e56cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a536eb20b1bfc1f8f53ddaf68e4776') in 0.077959 seconds
+  Import took 0.090121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000790 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Mixed_AO.png
+  artifactKey: Guid(75202848b47f7a246987fc9bb84aa296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Mixed_AO.png using Guid(75202848b47f7a246987fc9bb84aa296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '732d5cfa84db72d78b8f813404521d62') in 0.355067 seconds
+  Import took 0.394891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Base_Color.png
+  artifactKey: Guid(c236c4b5920694b4c9c51f2471241a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Base_Color.png using Guid(c236c4b5920694b4c9c51f2471241a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa3346d33d0779b2642a7df6792220f4') in 0.115828 seconds
+  Import took 0.157096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Normal_OpenGL.png
+  artifactKey: Guid(c1e26a5d54216a14d90afc08fbbe0d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Normal_OpenGL.png using Guid(c1e26a5d54216a14d90afc08fbbe0d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33555a74cf3a0887ab50ca0e5efeb59c') in 0.091674 seconds
+  Import took 0.095444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Emissive.png
+  artifactKey: Guid(418241f3f68afc44da3b83334d6f4c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Emissive.png using Guid(418241f3f68afc44da3b83334d6f4c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ebbd6767fba4e5c227b1bbaec9454f') in 0.102046 seconds
+  Import took 0.105173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Roughness.png
+  artifactKey: Guid(fad52035551e4be46be2b28fef221f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Roughness.png using Guid(fad52035551e4be46be2b28fef221f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5965a4b655be4f4163a4e654b44944e8') in 0.062691 seconds
+  Import took 0.065872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000408 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Metallic.png
+  artifactKey: Guid(5f18d1ea70d98814ea5f44ada1dfd3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Metallic.png using Guid(5f18d1ea70d98814ea5f44ada1dfd3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '969b6cb50c1419d13ff2a2a600681001') in 0.076505 seconds
+  Import took 0.079415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.438370 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/boss_Texture.mat
+  artifactKey: Guid(2a1edd52f0dcc0e429e03a4a7576c2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/boss_Texture.mat using Guid(2a1edd52f0dcc0e429e03a4a7576c2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01b09e81c53dd5a340b4a445ad21f4a') in 0.165155 seconds
+  Import took 0.168585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.974695 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Base_Color.png
+  artifactKey: Guid(c236c4b5920694b4c9c51f2471241a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Base_Color.png using Guid(c236c4b5920694b4c9c51f2471241a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '916e412f3622caaa09afa59fb4d61d0e') in 0.134272 seconds
+  Import took 0.144442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001525 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Mixed_AO.png
+  artifactKey: Guid(75202848b47f7a246987fc9bb84aa296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Mixed_AO.png using Guid(75202848b47f7a246987fc9bb84aa296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa3c2fc7e1d2cf2920c6e5a6d29d0cc') in 0.166977 seconds
+  Import took 0.210183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Normal_OpenGL.png
+  artifactKey: Guid(c1e26a5d54216a14d90afc08fbbe0d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Normal_OpenGL.png using Guid(c1e26a5d54216a14d90afc08fbbe0d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c06959b41987e68e941af5793a4a77') in 0.037327 seconds
+  Import took 0.041329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Emissive.png
+  artifactKey: Guid(418241f3f68afc44da3b83334d6f4c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Emissive.png using Guid(418241f3f68afc44da3b83334d6f4c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d2b50f806a16fe13ca94893751acce5') in 0.048337 seconds
+  Import took 0.060862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Roughness.png
+  artifactKey: Guid(fad52035551e4be46be2b28fef221f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Roughness.png using Guid(fad52035551e4be46be2b28fef221f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0324b0ddb180f70efcfa0836017d51a8') in 0.061843 seconds
+  Import took 0.065080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Metallic.png
+  artifactKey: Guid(5f18d1ea70d98814ea5f44ada1dfd3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Metallic.png using Guid(5f18d1ea70d98814ea5f44ada1dfd3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453828b4420174e124ea723679e0e905') in 0.031870 seconds
+  Import took 0.035026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000527 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Metallic.png
+  artifactKey: Guid(5f18d1ea70d98814ea5f44ada1dfd3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Metallic.png using Guid(5f18d1ea70d98814ea5f44ada1dfd3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453828b4420174e124ea723679e0e905') in 0.075603 seconds
+  Import took 0.080304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.415675 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Normal_OpenGL.png
+  artifactKey: Guid(c1e26a5d54216a14d90afc08fbbe0d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Boss/SPRING_Normal_OpenGL.png using Guid(c1e26a5d54216a14d90afc08fbbe0d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c947f47616c238aa2d599327bad97734') in 0.032298 seconds
+  Import took 0.036308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 323.945999 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Base_Color.png
+  artifactKey: Guid(bdc6b8a3b267a4540b2788ab3850a2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Base_Color.png using Guid(bdc6b8a3b267a4540b2788ab3850a2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d23c2590c1d94f9d3f4fd9e863542b3') in 0.162769 seconds
+  Import took 0.166275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Mixed_AO.png
+  artifactKey: Guid(216259db12888f04ca5150be8abf9831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Mixed_AO.png using Guid(216259db12888f04ca5150be8abf9831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be3ecf29b3ba4ff4ab4f2d500d294b81') in 0.156872 seconds
+  Import took 0.159372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Assets/Environment/Nature/stones/textures/T_LStone_1/T_LStone_1_Color.png
+  artifactKey: Guid(17772022ed69b8d4baa527b2f93b654d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/Nature/stones/textures/T_LStone_1/T_LStone_1_Color.png using Guid(17772022ed69b8d4baa527b2f93b654d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f851a93c6b4abdb107d81b20829bab5e') in 0.091202 seconds
+  Import took 0.094552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Normal_OpenGL.png
+  artifactKey: Guid(3d181f85d814f93479cd1a733fad7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Normal_OpenGL.png using Guid(3d181f85d814f93479cd1a733fad7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f82fc0d7b23c5220c083a9e0476e8df') in 0.124637 seconds
+  Import took 0.127730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Assets/Environment/Nature/stones/textures/T_LStone_1/T_LStone_1_Height.png
+  artifactKey: Guid(ce976194b682f964ebaa9203cf6244f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/Nature/stones/textures/T_LStone_1/T_LStone_1_Height.png using Guid(ce976194b682f964ebaa9203cf6244f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0122e708052f0e3a06a1c8e23a30025a') in 0.073826 seconds
+  Import took 0.076301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Roughness.png
+  artifactKey: Guid(6d1f942c13b4a4245b89e0a65345727c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Roughness.png using Guid(6d1f942c13b4a4245b89e0a65345727c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9534c858769ee2b779bf789f6c711c6f') in 0.107926 seconds
+  Import took 0.110911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Assets/Environment/Nature/stones/textures/T_LStone_1/T_LStone_1_Normal.png
+  artifactKey: Guid(b40df6b268135e9468611c825bab2b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/Nature/stones/textures/T_LStone_1/T_LStone_1_Normal.png using Guid(b40df6b268135e9468611c825bab2b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5ff2c934abcf429de5b736f20cf22d') in 0.079354 seconds
+  Import took 0.083461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Metallic.png
+  artifactKey: Guid(46cc54b89b5a4ab4ab9fbf8342596a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Metallic.png using Guid(46cc54b89b5a4ab4ab9fbf8342596a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02efe43b943acb7f0b09033f8916b85f') in 0.077413 seconds
+  Import took 0.080296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 170.748145 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword blocking (3).fbx
+  artifactKey: Guid(460227095352f3e47b188a769ae075d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/great sword blocking (3).fbx using Guid(460227095352f3e47b188a769ae075d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e13bd7dc15b7e4573b7c307eb6f1337c') in 0.055556 seconds
+  Import took 0.065842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.214548 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/two handed sword death.fbx
+  artifactKey: Guid(ffece2a4eda3bae4a8aa4e369ec6824b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/two handed sword death.fbx using Guid(ffece2a4eda3bae4a8aa4e369ec6824b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e09e1fe64e05aabd2c315d936044a4c') in 0.025954 seconds
+  Import took 0.035026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008123 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/two handed sword death.fbx
+  artifactKey: Guid(ffece2a4eda3bae4a8aa4e369ec6824b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/two handed sword death.fbx using Guid(ffece2a4eda3bae4a8aa4e369ec6824b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e09e1fe64e05aabd2c315d936044a4c') in 0.020463 seconds
+  Import took 0.031497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.780810 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Animations/two handed sword death.fbx
+  artifactKey: Guid(ffece2a4eda3bae4a8aa4e369ec6824b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Animations/two handed sword death.fbx using Guid(ffece2a4eda3bae4a8aa4e369ec6824b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58569a64ebaa6ca0a5c289a87716d264') in 0.027547 seconds
+  Import took 0.043790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 145.281333 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Sword
+  artifactKey: Guid(275d180cf806fdd4d9d704b2cdc299f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Sword using Guid(275d180cf806fdd4d9d704b2cdc299f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfaab7b5d4e01e3fa6ca5439e3a14e34') in 0.030338 seconds
+  Import took 0.039235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.676889 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor
+  artifactKey: Guid(b04f9dada5a668f4bb237161d36d91d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor using Guid(b04f9dada5a668f4bb237161d36d91d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e398b8ed4b47bfa902b5fb41834fc7') in 0.016868 seconds
+  Import took 0.020158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050685 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Base_Color.png
+  artifactKey: Guid(103e7a2c1c129f14fa1ee93643cd0304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Base_Color.png using Guid(103e7a2c1c129f14fa1ee93643cd0304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7b5cab8d2d198b30d3f28eecf4fed6') in 0.102955 seconds
+  Import took 0.106770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Mixed_AO.png
+  artifactKey: Guid(0f84b5e78eeb05e4196920a6b010937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Mixed_AO.png using Guid(0f84b5e78eeb05e4196920a6b010937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3ffef4b46a695092fe3ee278e80557c') in 0.224761 seconds
+  Import took 0.227829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj
+  artifactKey: Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj using Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0327a4c67bcf320cf8853b6af6a8e0fa') in 0.139918 seconds
+  Import took 0.148758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Normal.png
+  artifactKey: Guid(e4e6ac65e6432014e9fc5a3a6efb576c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Normal.png using Guid(e4e6ac65e6432014e9fc5a3a6efb576c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fddab7af0134157e282edd07b5c4ac07') in 0.119939 seconds
+  Import took 0.123684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Roughness.png
+  artifactKey: Guid(b521bf973ad814e40be2da9306328c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Roughness.png using Guid(b521bf973ad814e40be2da9306328c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f103c0dcc8e672d3b81a2f0cc9f7c6') in 0.105972 seconds
+  Import took 0.119129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.612558 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Base_Color.png
+  artifactKey: Guid(103e7a2c1c129f14fa1ee93643cd0304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Base_Color.png using Guid(103e7a2c1c129f14fa1ee93643cd0304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '550b4d54a75eccd5a23bbbc96832d6f6') in 0.044660 seconds
+  Import took 0.053037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Mixed_AO.png
+  artifactKey: Guid(0f84b5e78eeb05e4196920a6b010937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Mixed_AO.png using Guid(0f84b5e78eeb05e4196920a6b010937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e0f7c17c53c37b8c6a0f40fb214a672') in 0.105192 seconds
+  Import took 0.110529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Normal.png
+  artifactKey: Guid(e4e6ac65e6432014e9fc5a3a6efb576c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Normal.png using Guid(e4e6ac65e6432014e9fc5a3a6efb576c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010bd7fe2ae20b1d2fb8fc61e08a0ec2') in 0.113137 seconds
+  Import took 0.126262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Roughness.png
+  artifactKey: Guid(b521bf973ad814e40be2da9306328c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Roughness.png using Guid(b521bf973ad814e40be2da9306328c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ffc4615c00efa0346c5b25fa5cfb52a') in 0.059693 seconds
+  Import took 0.121900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.620263 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj
+  artifactKey: Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj using Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174f8672fd9386863dd18550a9faed29') in 0.098231 seconds
+  Import took 0.104981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 133.314060 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj
+  artifactKey: Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj using Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6652e148ceff79063a790525b790bda7') in 0.121846 seconds
+  Import took 0.131123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.316321 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj
+  artifactKey: Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj using Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9014cabdb3edaa3a6905a1c47444a868') in 0.061128 seconds
+  Import took 0.067141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.421119 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj
+  artifactKey: Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj using Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d0579e9367945f2843a1e04498ee4b') in 0.053824 seconds
+  Import took 0.059109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.410688 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj
+  artifactKey: Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/IceArmor.obj using Guid(cbf807963e8206e408805d9ce8adc865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487ca544055f39873a6b3f9000a45bdf') in 0.111813 seconds
+  Import took 0.114799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.753300 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/New Material.mat
+  artifactKey: Guid(450480497447ee44993cbf8bf40fb8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/New Material.mat using Guid(450480497447ee44993cbf8bf40fb8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d270478d7ae5d437c323f224951675') in 0.027162 seconds
+  Import took 0.033022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.520079 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Normal.png
+  artifactKey: Guid(e4e6ac65e6432014e9fc5a3a6efb576c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Armor/Armor_Normal.png using Guid(e4e6ac65e6432014e9fc5a3a6efb576c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03b7834e14014ca4d4e9ac1973851016') in 0.136613 seconds
+  Import took 0.162942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.975083 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Sword/ice_Base_Color.png
+  artifactKey: Guid(09ed5eab512354c419a55e9aad56958b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Sword/ice_Base_Color.png using Guid(09ed5eab512354c419a55e9aad56958b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ab0cd7fcbcfc278baa784e84533f6b') in 0.136600 seconds
+  Import took 0.140814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Sword/ice_Normal_OpenGL.png
+  artifactKey: Guid(d4b45f27c1a19b74593349f1fed12ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Sword/ice_Normal_OpenGL.png using Guid(d4b45f27c1a19b74593349f1fed12ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e090c5a15816fc4bf8384a98ec3fceb') in 0.093844 seconds
+  Import took 0.098823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Sword/ice_Roughness.png
+  artifactKey: Guid(e72ba55dba8bbe940b366dcc714cafa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Sword/ice_Roughness.png using Guid(e72ba55dba8bbe940b366dcc714cafa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ea323fa4db430a57f40a0db67e7988') in 0.088919 seconds
+  Import took 0.097342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Sword/SwordIce.obj
+  artifactKey: Guid(8b94b54cfeb0fda4f8d8c8b41c289bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Sword/SwordIce.obj using Guid(8b94b54cfeb0fda4f8d8c8b41c289bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3e53fdbb4c1af1bf1409efa5a96eda') in 0.085716 seconds
+  Import took 0.091043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Sword/ice_Mixed_AO.png
+  artifactKey: Guid(303024cc38210f94cb69faf038e8c7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Sword/ice_Mixed_AO.png using Guid(303024cc38210f94cb69faf038e8c7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d178294fe756b2d98f0d64c0bcd69b5') in 0.081640 seconds
+  Import took 0.085286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.897323 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossMesh/Sword.obj
+  artifactKey: Guid(59a9f63a5b414714eb644ea175d7c780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossMesh/Sword.obj using Guid(59a9f63a5b414714eb644ea175d7c780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8af5fd7e2ad1a02602d09a7e578dc83') in 0.124331 seconds
+  Import took 0.133344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.458813 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossMesh/Sword.obj
+  artifactKey: Guid(59a9f63a5b414714eb644ea175d7c780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossMesh/Sword.obj using Guid(59a9f63a5b414714eb644ea175d7c780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c10f3a35abb500d60fdc22684d502445') in 0.044164 seconds
+  Import took 0.054609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.410415 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossMesh/Sword.obj
+  artifactKey: Guid(59a9f63a5b414714eb644ea175d7c780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossMesh/Sword.obj using Guid(59a9f63a5b414714eb644ea175d7c780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0299545b25335dcb7f49258b1911c0a') in 0.049813 seconds
+  Import took 0.065882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.543817 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword
+  artifactKey: Guid(81555104971abbc44b25d5152bafab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword using Guid(81555104971abbc44b25d5152bafab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b797e1d568c2037b618b075c6dffa727') in 0.010278 seconds
+  Import took 0.021334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.860576 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Base_Color.png
+  artifactKey: Guid(bdc6b8a3b267a4540b2788ab3850a2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Base_Color.png using Guid(bdc6b8a3b267a4540b2788ab3850a2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e843961464a6508d101f4322c8bc9752') in 0.043024 seconds
+  Import took 0.080575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Mixed_AO.png
+  artifactKey: Guid(216259db12888f04ca5150be8abf9831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Mixed_AO.png using Guid(216259db12888f04ca5150be8abf9831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12cbc2fa9197d176f86d960b4493929') in 0.134510 seconds
+  Import took 0.181148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Normal_OpenGL.png
+  artifactKey: Guid(3d181f85d814f93479cd1a733fad7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Normal_OpenGL.png using Guid(3d181f85d814f93479cd1a733fad7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f7eb4e8d56d6cbc037e3737810b961') in 0.129477 seconds
+  Import took 0.142358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Roughness.png
+  artifactKey: Guid(6d1f942c13b4a4245b89e0a65345727c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Roughness.png using Guid(6d1f942c13b4a4245b89e0a65345727c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e2ac7f742d0e8ffa68e81c65be3efe2') in 0.049594 seconds
+  Import took 0.053297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Metallic.png
+  artifactKey: Guid(46cc54b89b5a4ab4ab9fbf8342596a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Metallic.png using Guid(46cc54b89b5a4ab4ab9fbf8342596a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '919b0f86b4c054a03d28a080563458c8') in 0.173302 seconds
+  Import took 0.184508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.783320 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/sword.mat
+  artifactKey: Guid(73c15b7bc68b2fc4183e6e081f1cb550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/sword.mat using Guid(73c15b7bc68b2fc4183e6e081f1cb550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b146f5b7bb626559e10423185e220217') in 0.021789 seconds
+  Import took 0.027321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.070019 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Normal_OpenGL.png
+  artifactKey: Guid(3d181f85d814f93479cd1a733fad7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/BossTextures/Sword/Sword_Normal_OpenGL.png using Guid(3d181f85d814f93479cd1a733fad7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00de63dce6e45b7de1f7cf7795af4de') in 0.049310 seconds
+  Import took 0.085611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.922184 seconds.
+  path: Assets/Assest/Character/BOSS_Winter/Heavy/Winter.prefab
+  artifactKey: Guid(f2491dbaacb442348bf6a26e2e3fe258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assest/Character/BOSS_Winter/Heavy/Winter.prefab using Guid(f2491dbaacb442348bf6a26e2e3fe258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '725e47c27684e9d7a7badb927b1832e1') in 0.332261 seconds
+  Import took 0.337949 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

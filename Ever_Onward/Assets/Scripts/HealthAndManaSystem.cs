@@ -34,16 +34,17 @@ public class HealthAndManaSystem : MonoBehaviour
         health = healthMax;
         mana = manaMax;
         respawnPoint = GameObject.Find("RespawnPoint1");
-        respawnPosition1 = transform.position;
+        //respawnPosition1 = transform.position;
     }
     public void Update()
     {
-        if (transform.position.y <= -250)
+        if (transform.position.y <= -100)
         {
-            //print("work fcker");
-            //print("heres yer position " + transform.position.ToString());
-            //print("respawn here " + respawnPosition1);
+            print("work fcker");
+            print("heres yer position " + transform.position.ToString());
+            print("respawn here " + respawnPosition1);
             transform.position = respawnPosition1;
+            
         }
         //print(mana);
         ManaRegen();

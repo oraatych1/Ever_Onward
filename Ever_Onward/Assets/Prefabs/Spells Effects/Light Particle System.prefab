@@ -9624,7 +9624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f9ffa87f75853488b9821f51be0e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: light
+  lifeSpan: 1
+  type: siphon
 --- !u!1 &7465398937662056627
 GameObject:
   m_ObjectHideFlags: 0
@@ -10360,7 +10361,7 @@ ParticleSystem:
     m_UseMeshMaterialIndex: 0
     m_UseMeshColors: 1
     alignToDirection: 0
-    m_Texture: {fileID: 2800000, guid: 109931abf79773f4587ebd20f17c2ce0, type: 3}
+    m_Texture: {fileID: 0}
     m_TextureClipChannel: 3
     m_TextureClipThreshold: 0
     m_TextureUVChannel: 0

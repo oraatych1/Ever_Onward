@@ -33,7 +33,8 @@ public class PlayerMovement : MonoBehaviour
     Vector2 currentMouseDelta = Vector2.zero;
     Vector2 currentMouseDeltaVelocity = Vector2.zero;
 
-
+    private float delta; 
+    CameraHandler cameraHandler;
 
     public bool isGrounded
     {
@@ -49,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        cameraHandler = CameraHandler.singleton;
 
         //crounchScale = new Vector3(.5f,.5f, .5f);
 
@@ -63,7 +65,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
+        delta  = Time.fixedDeltaTime;
+        if (cameraHandler != null)
+        {
+            cameraHandler.FollowTarget(delta);
+            //cameraHandler.HandleCameraRotation(delta);
+        }
         UpdateMouseLook();
         UpdateMovement();
 
@@ -77,14 +84,20 @@ public class PlayerMovement : MonoBehaviour
         Vector2 targetmouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
         currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetmouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
-
+        
         cameraPitch -= currentMouseDelta.y * mouseSensitivity;
         cameraPitch = Mathf.Clamp(cameraPitch, -45.0f, 45.0f);
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
-
+        
         transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
-
+        /*float mouseX = currentMouseDelta.x;
+        float mouseY = currentMouseDelta.y;
+        if (cameraHandler != null)
+        {
+            cameraHandler.HandleCameraRotation(delta, mouseX, mouseY);
+        }*/
     }
+   
 
     //Character Movement
     void UpdateMovement()

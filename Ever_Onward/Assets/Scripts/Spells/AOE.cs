@@ -5,7 +5,7 @@ using UnityEngine;
 public class AOE : MonoBehaviour
 {
 
-    private float lifeSpan = 1f;
+    public float lifeSpan = 1f;
     private float age = 0;
     private int maxRadius = 2;
     private int enemiesInRange = 0;
@@ -25,6 +25,9 @@ public class AOE : MonoBehaviour
             case "siphon":
                 maxRadius = 3;
                 break;
+            case "light":
+                maxRadius = 1;
+                break;
 
         }
     }
@@ -36,7 +39,7 @@ public class AOE : MonoBehaviour
 
         if (age > lifeSpan)
         {
-            print(enemiesInRange);
+            //print(enemiesInRange);
             if (type == "siphon") HealthAndManaSystem.health += enemiesInRange;
             Destroy(gameObject);
         }

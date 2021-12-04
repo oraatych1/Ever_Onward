@@ -5,10 +5,11 @@ using UnityEngine;
 
     public class CameraHandler : MonoBehaviour
     {
+    
         public Transform targetTransform;
         public Transform cameraTransform;
         public Transform cameraPivotTransform;
-        private Transform myTransform;
+        public Transform myTransform;
         private Vector3 cameraTransformPosition;
         private LayerMask ignoreLayers;
         private Vector3 cameraFollowVelocity = Vector3.zero;
@@ -23,14 +24,18 @@ using UnityEngine;
         private float defaultPosition;
         private float lookAngle;
         private float pivotAngle;
-        private float minimumPivot = -35;
+        public float minimumPivot = -35;
         public float maximumPivot = 35;
+
         public float cameraSphereRadius = 0.2f;
         public float cameraCollisionOffset = 0.2f;
         public float minimumCollisionOffset = 0.2f;
 
+    public LayerMask playerLayer;
 
-        private void Awake()
+
+
+    private void Awake()
         {
             singleton = this;
             myTransform = transform;
@@ -38,8 +43,7 @@ using UnityEngine;
             ignoreLayers = ~(1 << 8 | 1 << 9 | 1 << 10);
         }
 
-
-        public void FollowTarget(float delta)
+    public void FollowTarget(float delta)
         {
             Vector3 targetPosition = Vector3.SmoothDamp(myTransform.position, targetTransform.position, ref cameraFollowVelocity, delta / followSpeed);
             myTransform.position = targetPosition;
@@ -64,16 +68,19 @@ using UnityEngine;
             targetRotation = Quaternion.Euler(rotation);
             cameraPivotTransform.localRotation = targetRotation;
         }
-
+    
         private void HandleCameraCollisions(float delta) 
         {
             targetPosition = defaultPosition;
             RaycastHit hit;
             Vector3 direction = cameraTransform.position - cameraPivotTransform.position;
             direction.Normalize();
+            Debug.DrawLine(transform.position, direction, Color.red);
 
-            if (Physics.SphereCast(cameraPivotTransform.position, cameraSphereRadius, direction, out hit, Mathf.Abs(targetPosition), ignoreLayers))
+        if (Physics.SphereCast(cameraPivotTransform.position, cameraSphereRadius, direction, out hit, Mathf.Abs(targetPosition), playerLayer))
             {
+
+                print("I hits");
                 float dis = Vector3.Distance(cameraPivotTransform.position, hit.point);
                 targetPosition = -(dis - cameraCollisionOffset);
             }
@@ -87,4 +94,5 @@ using UnityEngine;
             cameraTransform.localPosition = cameraTransformPosition;
 
         }
+   
     }

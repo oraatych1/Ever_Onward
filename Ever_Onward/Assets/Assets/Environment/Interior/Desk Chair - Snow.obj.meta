@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: 3f044efe60a296e4389a96b344f0879b
+guid: bc5e82a91f664de45a1aaf282dadee22
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arm_RestMat
+    second: {fileID: 2100000, guid: f90dd19d763852c478e652575af26f78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Desk_TableMat
+    second: {fileID: 2100000, guid: f90dd19d763852c478e652575af26f78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Just_Chair__Half_Mat
+    second: {fileID: 2100000, guid: f90dd19d763852c478e652575af26f78, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

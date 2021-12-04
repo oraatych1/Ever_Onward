@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 0e70cca4d0520b44aa521248fbe765ac
+guid: 934c59218e32ee046add9605f25d5f47
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DecorMat
+    second: {fileID: 2100000, guid: abc79bac2d1bf3e47843c2b4ca81ebc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Podium_JBischerMat
+    second: {fileID: 2100000, guid: abc79bac2d1bf3e47843c2b4ca81ebc9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

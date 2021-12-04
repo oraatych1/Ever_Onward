@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 01e3a091fd4189748b973878fc5c6a98
+guid: 9912caee0c8204245a9cd5ee4b077e26
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,53 +7,53 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Bridge
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Large_Chest___BodyMat
+    second: {fileID: 2100000, guid: c8e509aa9781a9244b20817036dc430d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Doors, Door Frames, and Pillars
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Large_Chest___LidMat
+    second: {fileID: 2100000, guid: c57cfdbadcb01d249bf2b67a6cdb6db4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Environment
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: LatchMat
+    second: {fileID: 2100000, guid: 498ba420f53b02743bf89db8df9a55cb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Environment Decor
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Latch___PivotMat
+    second: {fileID: 2100000, guid: 498ba420f53b02743bf89db8df9a55cb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Gates
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Object004Mat
+    second: {fileID: 2100000, guid: 498ba420f53b02743bf89db8df9a55cb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Interior Walls & Floors
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Object005Mat
+    second: {fileID: 2100000, guid: 498ba420f53b02743bf89db8df9a55cb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Object006Mat
+    second: {fileID: 2100000, guid: 498ba420f53b02743bf89db8df9a55cb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Outer Walls
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Object007Mat
+    second: {fileID: 2100000, guid: 498ba420f53b02743bf89db8df9a55cb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Roofs
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Object008Mat
+    second: {fileID: 2100000, guid: 498ba420f53b02743bf89db8df9a55cb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Stair Wells
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Object009Mat
+    second: {fileID: 2100000, guid: 498ba420f53b02743bf89db8df9a55cb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

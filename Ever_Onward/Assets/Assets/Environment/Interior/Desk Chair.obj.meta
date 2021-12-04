@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 01e3a091fd4189748b973878fc5c6a98
+guid: 69b9294d3384e4d458664766b5f36eab
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,53 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Bridge
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Arm_RestMat
+    second: {fileID: 2100000, guid: 3754ed07a4b461e4bb992de69cfc80d2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Doors, Door Frames, and Pillars
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Desk_TableMat
+    second: {fileID: 2100000, guid: 3754ed07a4b461e4bb992de69cfc80d2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Environment
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Environment Decor
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Gates
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Interior Walls & Floors
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Outer Walls
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Roofs
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Stair Wells
-    second: {fileID: 2100000, guid: 24734cc5a5c5ac8419259f43fea6ff30, type: 2}
+      name: Just_Chair__Half_Mat
+    second: {fileID: 2100000, guid: 3754ed07a4b461e4bb992de69cfc80d2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

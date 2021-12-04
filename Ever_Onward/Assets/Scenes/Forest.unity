@@ -3810,6 +3810,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2093753540171515085, guid: 01e3a091fd4189748b973878fc5c6a98, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -54.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2093753540171515085, guid: 01e3a091fd4189748b973878fc5c6a98, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -70
+      objectReference: {fileID: 0}
     - target: {fileID: 2263836867416931603, guid: 01e3a091fd4189748b973878fc5c6a98, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -16191,7 +16199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914191707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 361.41, y: 24.51, z: -601.2}
+  m_LocalPosition: {x: 361.41, y: 25.02, z: -601.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -23681,7 +23689,6 @@ MonoBehaviour:
   manaFull: {fileID: 21300000, guid: 00fb172e031c1294a84e81858ae5aa99, type: 3}
   manaHalf: {fileID: 21300000, guid: 14845f15558611446ac4f6f44d9b3d2f, type: 3}
   manaEmpty: {fileID: 21300000, guid: 4c80ef67f99a81d419d19b8493ccc516, type: 3}
-  respawnPosition1: {x: 0, y: 0, z: 0}
 --- !u!114 &1664838516856242699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23706,6 +23713,7 @@ MonoBehaviour:
   mouseSmoothTime: 0.03
   lockCursor: 1
   jumpHeight: 20
+  respawnPosition1: {x: 0, y: 0, z: 0}
 --- !u!54 &1664838516856242700
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23748,7 +23756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664838516856242695}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: 362, y: 26.6, z: -601.5}
+  m_LocalPosition: {x: 362.9, y: 26.6, z: -601.5}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 3136409704103697651}

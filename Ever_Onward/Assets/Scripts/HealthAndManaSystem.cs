@@ -28,24 +28,31 @@ public class HealthAndManaSystem : MonoBehaviour
     public Vector3 respawnPosition1;
     GameObject respawnPoint;
 
+    public Transform myTransform;
+
+    public Transform Respawn;
+
 
     private void Start()
     {
         health = healthMax;
         mana = manaMax;
-        respawnPoint = GameObject.Find("RespawnPoint1");
-        respawnPosition1 = transform.position;
+        //respawnPoint = GameObject.Find("RespawnPoint1");
+        //respawnPosition1 = transform.position;
     }
     public void Update()
     {
-        if (transform.position.y <= -100)
+        if (myTransform.position.y <= -100)
         {
             //print("work fcker");
             //print("heres yer position " + transform.position.ToString());
             //print("respawn here " + respawnPosition1);
-            transform.position = respawnPosition1;
-            
+            //transform.position = respawnPosition1;
+            print(Respawn.position + "respawn pos");
+            print(myTransform.position + "my pos");
+            myTransform.position = Respawn.position;
         }
+        else { }
         //print(mana);
         ManaRegen();
         if (manaRegenTimer >= 0) manaRegenTimer -= Time.deltaTime;
@@ -116,7 +123,8 @@ public class HealthAndManaSystem : MonoBehaviour
         if(other.tag == "RespawnPlane")
         {
             print("Colliding Bottom");
-            
+            myTransform.position = Respawn.position;
+
         }
     }
 

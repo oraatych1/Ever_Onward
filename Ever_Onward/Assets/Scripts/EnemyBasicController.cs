@@ -90,6 +90,18 @@ public class EnemyBasicController : MonoBehaviour
                     return null;
                 }
             }
+
+        public class MeleeBossSmash : State
+        {
+            public override State Update()
+            {
+
+
+
+                if (enemy.healthSystem >= 75) return new States.Idle();
+                return null;
+            }
+        }
         
     }
 

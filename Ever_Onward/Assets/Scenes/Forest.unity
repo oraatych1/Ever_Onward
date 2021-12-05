@@ -3910,6 +3910,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2093753540171515085, guid: 01e3a091fd4189748b973878fc5c6a98, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -54.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2093753540171515085, guid: 01e3a091fd4189748b973878fc5c6a98, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -70
+      objectReference: {fileID: 0}
     - target: {fileID: 2263836867416931603, guid: 01e3a091fd4189748b973878fc5c6a98, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -25042,6 +25050,7 @@ MonoBehaviour:
   mouseSmoothTime: 0.03
   lockCursor: 1
   jumpHeight: 20
+  respawnPosition1: {x: 0, y: 0, z: 0}
 --- !u!54 &1664838516856242700
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25084,7 +25093,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664838516856242695}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: 362, y: 26.6, z: -601.5}
+  m_LocalPosition: {x: 362.9, y: 26.6, z: -601.5}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 3136409704103697651}

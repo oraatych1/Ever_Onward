@@ -24,8 +24,11 @@ public class PlayerMovement : MonoBehaviour
     private float timeLeftGrounded = 0;
     public float jumpHeight = 8;
 
-   // private bool isCrouched = false;
-   // private Vector3 crounchScale;
+    public Vector3 respawnPosition1;
+    GameObject respawnPoint;
+
+    // private bool isCrouched = false;
+    // private Vector3 crounchScale;
 
     Vector2 currentDir = Vector2.zero;
     Vector2 currentDirVelocity = Vector2.zero;
@@ -61,6 +64,9 @@ public class PlayerMovement : MonoBehaviour
             Cursor.visible = false;
         }
 
+        respawnPoint = GameObject.Find("RespawnPoint1");
+        respawnPosition1 = respawnPoint.transform.position;
+
     }
 
     void Update()
@@ -72,7 +78,20 @@ public class PlayerMovement : MonoBehaviour
             //cameraHandler.HandleCameraRotation(delta);
         }
         UpdateMouseLook();
-        UpdateMovement();
+        
+
+        if (transform.position.y <= -50)
+        {
+            //print("work fcker");
+            //print("heres yer position " + transform.position.ToString());
+            print("respawn here " + respawnPosition1);
+            transform.position = respawnPosition1;
+
+        }
+        else
+        {
+            UpdateMovement();
+        }
 
 
     }

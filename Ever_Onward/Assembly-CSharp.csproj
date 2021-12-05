@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Settings.cs" />
     <Compile Include="Assets\Scripts\Master Scripts\canvasScript.cs" />
     <Compile Include="Assets\Scripts\PlayerSpellSwitches.cs" />
+    <Compile Include="Assets\Scripts\lightDetector.cs" />
     <Compile Include="Assets\Scripts\Spells\AOE.cs" />
     <Compile Include="Assets\Scripts\Raycasting.cs" />
     <Compile Include="Assets\Scripts\Dialogue System\DialogueTrigger.cs" />
@@ -83,7 +84,6 @@
     <Compile Include="Assets\Scripts\Enemy Scripts\enemyFire.cs" />
     <Compile Include="Assets\Scripts\Master Scripts\gameManagerMaster.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\AIDamage.cs" />
-    <Compile Include="Assets\Scripts\CameraCollision.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\enemyCharge.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\enemyNavPursue.cs" />
     <Compile Include="Assets\Scripts\plantDetector.cs" />

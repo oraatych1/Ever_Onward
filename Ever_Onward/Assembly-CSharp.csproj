@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\Enemy Scripts\enemyFire.cs" />
     <Compile Include="Assets\Scripts\Master Scripts\gameManagerMaster.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\AIDamage.cs" />
+    <Compile Include="Assets\Scripts\CameraCollision.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\enemyCharge.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\enemyNavPursue.cs" />
     <Compile Include="Assets\Scripts\plantDetector.cs" />
